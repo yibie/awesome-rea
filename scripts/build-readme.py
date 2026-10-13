@@ -165,6 +165,7 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 - **Native ports do not include the original assets.** Ports listed here are built from source that reimplements game logic; they still require you to own the game, and they ship no ROMs, textures, audio or data.
 - **Matching decompilation is a clean-room reimplementation.** It reconstructs behaviour into new source and does not redistribute the original code. The legal position of publishing such source varies by project and jurisdiction, and is not settled everywhere.
 - **"Reverse engineer anything" tools carry real EULA and DMCA risk.** Where an entry describes a tool used on a commercial product you did not licence for that purpose, that is a factual description of what someone did, not advice that you may.
+- **This list does not host or index ROMs, game assets, or decompiled asset dumps.** Entries point at source that reimplements logic. Archives of extracted game data are out of scope however they are framed, and no entry here links to one.
 - **Nothing here is legal advice, and a listing is not approval.** If you intend to ship something built from an entry on this list, check the licence, the local rules, and the terms you agreed to yourself.
 
 ## Current coverage

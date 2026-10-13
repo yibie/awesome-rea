@@ -36,6 +36,7 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 - **Native ports do not include the original assets.** Ports listed here are built from source that reimplements game logic; they still require you to own the game, and they ship no ROMs, textures, audio or data.
 - **Matching decompilation is a clean-room reimplementation.** It reconstructs behaviour into new source and does not redistribute the original code. The legal position of publishing such source varies by project and jurisdiction, and is not settled everywhere.
 - **"Reverse engineer anything" tools carry real EULA and DMCA risk.** Where an entry describes a tool used on a commercial product you did not licence for that purpose, that is a factual description of what someone did, not advice that you may.
+- **This list does not host or index ROMs, game assets, or decompiled asset dumps.** Entries point at source that reimplements logic. Archives of extracted game data are out of scope however they are framed, and no entry here links to one.
 - **Nothing here is legal advice, and a listing is not approval.** If you intend to ship something built from an entry on this list, check the licence, the local rules, and the terms you agreed to yourself.
 
 ## Current coverage
@@ -46,8 +47,8 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 4 |
 | [Tooling & MCP](#tooling--mcp) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 2 |
-| **Total** | **12** |
+| [Related Practices & Discussions](#related-practices--discussions) | 7 |
+| **Total** | **17** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -55,7 +56,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 4 entries
 - [Tooling & MCP](#tooling--mcp) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 2 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 7 entries
 
 ## Full list
 
@@ -89,11 +90,16 @@ What does not belong here: the decompilation or port projects themselves (see th
 
 ### Related Practices & Discussions
 
-Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — X threads, forum write-ups, methodology post-mortems — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact. Entries here still need a claim someone made publicly, not a summary of a trend.
+Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, X threads — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact. Entries here still need a claim someone made publicly, not a summary of a trend.
 What does not belong here: projects that belong in a project category, vendor announcements, and any post whose only content is excitement about AI.
 
 - [Define correctness as PASS/FAIL, then let agents iterate](https://x.com/arpit_bhayani/status/2109505311904309621) - X thread: the transferable move is defining correctness as something a machine can decide and then letting agents iterate against it, because wrong decompiled code can look entirely plausible — and the pattern is not specific to games.
+- [Where "software is solved" is overstated](https://x.com/wangdou/status/2109404200513708307) - X breakdown: takes a widely shared claim apart point by point, quoting the core idea that a verifiable outcome can be looped against, and then separating that from the conclusion people draw from it.
 - [Reverse Engineer Anything, tried on a live game](https://x.com/AIWarper/status/2109060856466264566) - X test: a Steam game taken apart and running in Unity in about half an hour, which is the clearest reason this list carries a legal section rather than a disclaimer.
+- [Decompiling a Nintendo 64 Game in 84 Days](https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days/) - Post-mortem: a matching decompilation finished in 84 days against 596 for its predecessor, and the author refuses the tidy version of why — he had nearly two years of prior experience on a similar project, and roughly 4.8% of matching commits still needed a human expert, so attributing the whole gap to LLMs would be a gross oversimplification.
+- [The Long Tail of LLM-Assisted Decompilation](https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/) - Post-mortem: matched code climbs from about 25% to 58% quickly and then stalls, forcing the workflow to change, and the extra automation needed guardrails because an unsupervised agent could commit mistakes.
+- [Using Coding Agents to Decompile Nintendo 64 Games](https://blog.chrislewis.au/using-coding-agents-to-decompile-nintendo-64-games/) - Methodology: the first post in the series, describing how coding agents were set up to work a matching decompilation before the results were known.
+- [All games are open source now](https://x.com/rehan_shei/status/2106548006350942533) - X article: frames matching decompilation plus agents as an abundance shift for game preservation.
 
 ## Open categories still being seeded
 
