@@ -1,0 +1,9 @@
+# Game Decompilation
+
+Use this category for matching decompilation of games: projects that rebuild a retail binary into readable source and check the result against the original. The acceptance test is usually byte-exactness — a rebuilt function has to produce the same machine code as the ROM — so entries here should say which counter runs (functions matched, functions byte-exact) and what gates a function before it counts.
+
+What does not belong here: ports that do not claim byte-matching (see Static Recompilation & Native Ports), decompilation of non-game software (see Console & Firmware), and tools rather than projects (see Tooling & MCP).
+
+- [500+ Billion Tokens Later](https://momo5502.com/posts/2026-10-09-game-decompilation/) - Decompilation: agents got 99% of a first-person shooter's functions into the reconstructed source with 83% of them byte-exact, gated by a byte-matching verification harness, and the operational finding was that dropping the context compaction threshold from 90% to 42% saved more than any model upgrade.
+- [sm64ds-decomp](https://github.com/tangosdev/sm64ds-decomp) - Decompilation: an agent team rebuilds Super Mario 64 DS function by function against the retail cartridge, with progress tracked per function (11,385 of 11,389 matched) and each match gated by independent byte comparison, a source review gate and a relocation destination audit; the same repository ships a PC port kept honest by a smoke build that has to stay green.
+- [Xenosaga Ep I Decompilation Project](https://scientia.godsibb.net/t/xenosaga-ep-i-decompilation-project/1496) - Decompilation: one person reached 3,669 of 7,645 game functions in a little over a week with AI assistance, using matching decompilation as the criterion and an independent byte checker that does not trust the build the agents produce.
