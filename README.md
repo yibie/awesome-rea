@@ -47,8 +47,8 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 4 |
 | [Tooling & MCP](#tooling--mcp) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 7 |
-| **Total** | **17** |
+| [Related Practices & Discussions](#related-practices--discussions) | 10 |
+| **Total** | **20** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -56,7 +56,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 4 entries
 - [Tooling & MCP](#tooling--mcp) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 7 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 10 entries
 
 ## Full list
 
@@ -100,6 +100,9 @@ What does not belong here: projects that belong in a project category, vendor an
 - [The Long Tail of LLM-Assisted Decompilation](https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/) - Post-mortem: matched code climbs from about 25% to 58% quickly and then stalls, forcing the workflow to change, and the extra automation needed guardrails because an unsupervised agent could commit mistakes.
 - [Using Coding Agents to Decompile Nintendo 64 Games](https://blog.chrislewis.au/using-coding-agents-to-decompile-nintendo-64-games/) - Methodology: the first post in the series, describing how coding agents were set up to work a matching decompilation before the results were known.
 - [All games are open source now](https://x.com/rehan_shei/status/2106548006350942533) - X article: frames matching decompilation plus agents as an abundance shift for game preservation.
+- [Development Journey on Game Decompilation Using AI](https://gambiconf.substack.com/p/development-journey-on-game-decompilation) - Hands-on study: a GAMBIconf talk write-up on using AI to decompile retro games, built around an agent called Kappa that runs inside VS Code Copilot and works one function at a time.
+- [Claims that genAI speeds up PC ports of classic games are either "false" or missing the point](https://www.reddit.com/r/SBCGaming/comments/1wyhd5s/) - Discussion: argues the speed-up claims either fail outright or miss where porting actually spends its time, from a community that does the work.
+- [AI-generated decompilations are garbage](https://www.reddit.com/r/decomps/comments/1v6b9gw/) - Counterpoint: a decompilation community thread rejecting the AI output as unusable, kept here so the dissent stays attached to the positive entries.
 
 ## Open categories still being seeded
 
