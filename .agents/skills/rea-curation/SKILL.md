@@ -9,9 +9,16 @@ Use this skill to maintain `awesome-rea` as a **strict list of AI-assisted rever
 
 ## The rule that defines this list
 
-**Every entry has to state the acceptance test.** Not what the project is about, not what the model did — what decides whether the work is correct: a byte comparison against the original ROM, a required hash match on the user's own dump, a compatibility matrix, a source review gate, a build that has to stay green.
+**Every category entry has to state the acceptance test.** Not what the project is about, not what the model did — what decides whether the work is correct: a byte comparison against the original ROM, a required hash match on the user's own dump, a compatibility matrix, a source review gate, a build that has to stay green.
 
-A project that cannot say how correctness is decided **does not go in a main category**, however impressive its demo. If it is an argument or a report rather than a project, it belongs in `categories/related-practices-discussions.md`.
+A project that cannot say how correctness is decided does not go on a category page, however impressive its demo.
+
+**But it does not get dropped — it goes into `categories/related-practices-discussions.md`, and that is a first-class outcome, not a waiting room.** The list runs on two tracks:
+
+1. **Projects** (the category pages) — need the acceptance test.
+2. **Practice signals** (`related-practices-discussions.md`) — need a public claim someone made about the work, and **neither a repository nor an acceptance test**. A post-mortem, a talk write-up, a thread where practitioners disagree.
+
+Many of the most useful things in this field never become a repository. A subject is worth recording while it is still being argued about, so **do not let the verification rule quietly delete discussion leads.** If someone publicly asks why AI decompilation is not solved yet, or a porting community trades notes on where agents help, that is a discussion entry. The only things to keep out are excitement with no claim about the work, and vendor announcements.
 
 This is the difference between this list and "AI is impressive" collections. Protect it.
 
@@ -33,8 +40,7 @@ All of these must hold:
 
 - **Public and citable** — a reachable repository, write-up or public thread. Not a paywall, not a login wall, not a dead link.
 - **AI or LLM agents did identifiable work** — an agent wrote functions, hunted root causes, wrote tests, ran verification, or played a verifier role. Generic reverse engineering with no agent in the loop is **out of scope**, even at 273 stars.
-- **The acceptance test is stated** — one sentence has to make the verification visible.
-- **One category per entry**, chosen by what the project *is*, not who made it.
+- **The acceptance test is stated** — required on **Track 1 only**. Track 2 does not need one. **One category per entry**, chosen by what the project *is*, not who made it.
 
 Reject outright:
 

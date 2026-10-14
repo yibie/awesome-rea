@@ -8,7 +8,9 @@ Thanks for adding to the list. Read the two rules below before opening a pull re
 
 Not what the project is about. Not what the model did. What decides whether the work is correct: a byte comparison against the original ROM, a required hash match on the user's own dump, a compatibility matrix, a build that has to stay green.
 
-This is the entire point of the list. A project that cannot say how correctness is decided does not go in a project category, no matter how good the demo looked. If it is an argument or a report rather than a project, it belongs in `categories/related-practices-discussions.md`.
+This is the entire point of the list. A project that cannot say how correctness is decided does not go in a project category, no matter how good the demo looked.
+
+**It goes in `categories/related-practices-discussions.md` instead, and that is a normal outcome rather than a rejection.** That category is a first-class track, not a waiting room: it needs **no public repository and no acceptance test**, only a public claim someone made about the work. A post-mortem, a talk write-up or a thread where practitioners disagree all belong there.
 
 ## Entry format
 

@@ -135,22 +135,36 @@ A curated list of AI-assisted reverse engineering: decompilation, static recompi
 
 Every entry answers the same question: **how does this project define "done"?** This is not a collection of "AI is impressive" demos. It is a collection of projects that turned correctness into a gate a machine can decide — a byte comparison against the original ROM, a required hash match on the user's own dump, a compatibility matrix, a build that has to stay green.
 
+The list runs on **two tracks**. Category pages hold projects that state how correctness is decided. `Related Practices & Discussions` holds practice signals — post-mortems, talk write-ups, arguments — which need **no repository and no acceptance test**, because a subject is worth recording while it is still an argument. Both tracks are first-class: an item with neither a repo nor a verification clause is a normal discussion entry here, not a rejected project.
+
 ## Why this list
 
 The interesting part of an AI-assisted decompilation is never that a model wrote code. It is that someone decided what counts as correct *before* letting agents iterate, and then built the harness that decides it. That decision is what separates a project that finishes from one that produces plausible-looking source nobody can trust.
 
-So a project with no stated acceptance test is not listed here, however impressive its demo.
+So a project with no stated acceptance test does not go on a category page. It goes into Related Practices & Discussions if it makes a public claim, or it waits.
 
 ## Inclusion criteria
 
-An entry qualifies only if all of the following hold:
+This list has **two tracks**, and an item only has to satisfy one of them.
 
-1. **Public and citable.** A reachable repository, write-up or public thread. Anything behind a paywall, a login, or a dead link does not go in.
+### Track 1 — Projects (the category pages)
+
+1. **Public and citable.** A reachable repository, project page or substantial write-up. Not a paywall, not a login wall, not a dead link.
 2. **AI or LLM agents did identifiable work.** Not "AI could be used here" — an agent wrote functions, hunted root causes, wrote tests, ran verification, or played a verifier role. Generic reverse engineering with no agent in the loop is out of scope.
-3. **The acceptance test is stated.** One sentence has to make the verification visible: what is compared, against what, and what has to pass. If the entry cannot say how correctness is decided, it belongs in Related Practices & Discussions, or it waits.
+3. **The acceptance test is stated.** One sentence has to make the verification visible: what is compared, against what, and what has to pass.
 4. **One category per entry**, chosen by what the project *is*, not by which company made it.
 
-Explicitly not accepted: vendor announcements, opinion pieces with no artifact behind them, sources that cannot be reached, and entries where "AI-powered" is marketing copy rather than a description of work.
+### Track 2 — Practice signals (`related-practices-discussions.md`)
+
+Some of the most useful material in this field is not a repository. A post-mortem that admits a headline number was oversold, a conference talk write-up, a thread where people who actually port games argue about whether the speed-ups are real — none of that has a build to point at, and all of it is practice signal. **A public repository is not required for this track.**
+
+1. **A public claim someone made.** A thread, article, talk or write-up, readable without an account.
+2. **It is about the work, not about the excitement.** "Here is what we did and where it broke" qualifies. "Look how fast AI is now" does not.
+3. **No artifact, so no verification clause.** That is the point of having a second track: it is where a subject gets recorded while it is still an argument.
+
+An item with no public repository and no stated acceptance test is a **normal discussion entry** here, not a rejected project.
+
+Explicitly not accepted on either track: vendor announcements, sources that cannot be reached, and anything where "AI-powered" is marketing copy rather than a description of work.
 
 ## Curation is not endorsement
 

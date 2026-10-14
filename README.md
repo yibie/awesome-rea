@@ -6,22 +6,36 @@ A curated list of AI-assisted reverse engineering: decompilation, static recompi
 
 Every entry answers the same question: **how does this project define "done"?** This is not a collection of "AI is impressive" demos. It is a collection of projects that turned correctness into a gate a machine can decide — a byte comparison against the original ROM, a required hash match on the user's own dump, a compatibility matrix, a build that has to stay green.
 
+The list runs on **two tracks**. Category pages hold projects that state how correctness is decided. `Related Practices & Discussions` holds practice signals — post-mortems, talk write-ups, arguments — which need **no repository and no acceptance test**, because a subject is worth recording while it is still an argument. Both tracks are first-class: an item with neither a repo nor a verification clause is a normal discussion entry here, not a rejected project.
+
 ## Why this list
 
 The interesting part of an AI-assisted decompilation is never that a model wrote code. It is that someone decided what counts as correct *before* letting agents iterate, and then built the harness that decides it. That decision is what separates a project that finishes from one that produces plausible-looking source nobody can trust.
 
-So a project with no stated acceptance test is not listed here, however impressive its demo.
+So a project with no stated acceptance test does not go on a category page. It goes into Related Practices & Discussions if it makes a public claim, or it waits.
 
 ## Inclusion criteria
 
-An entry qualifies only if all of the following hold:
+This list has **two tracks**, and an item only has to satisfy one of them.
 
-1. **Public and citable.** A reachable repository, write-up or public thread. Anything behind a paywall, a login, or a dead link does not go in.
+### Track 1 — Projects (the category pages)
+
+1. **Public and citable.** A reachable repository, project page or substantial write-up. Not a paywall, not a login wall, not a dead link.
 2. **AI or LLM agents did identifiable work.** Not "AI could be used here" — an agent wrote functions, hunted root causes, wrote tests, ran verification, or played a verifier role. Generic reverse engineering with no agent in the loop is out of scope.
-3. **The acceptance test is stated.** One sentence has to make the verification visible: what is compared, against what, and what has to pass. If the entry cannot say how correctness is decided, it belongs in Related Practices & Discussions, or it waits.
+3. **The acceptance test is stated.** One sentence has to make the verification visible: what is compared, against what, and what has to pass.
 4. **One category per entry**, chosen by what the project *is*, not by which company made it.
 
-Explicitly not accepted: vendor announcements, opinion pieces with no artifact behind them, sources that cannot be reached, and entries where "AI-powered" is marketing copy rather than a description of work.
+### Track 2 — Practice signals (`related-practices-discussions.md`)
+
+Some of the most useful material in this field is not a repository. A post-mortem that admits a headline number was oversold, a conference talk write-up, a thread where people who actually port games argue about whether the speed-ups are real — none of that has a build to point at, and all of it is practice signal. **A public repository is not required for this track.**
+
+1. **A public claim someone made.** A thread, article, talk or write-up, readable without an account.
+2. **It is about the work, not about the excitement.** "Here is what we did and where it broke" qualifies. "Look how fast AI is now" does not.
+3. **No artifact, so no verification clause.** That is the point of having a second track: it is where a subject gets recorded while it is still an argument.
+
+An item with no public repository and no stated acceptance test is a **normal discussion entry** here, not a rejected project.
+
+Explicitly not accepted on either track: vendor announcements, sources that cannot be reached, and anything where "AI-powered" is marketing copy rather than a description of work.
 
 ## Curation is not endorsement
 
@@ -47,8 +61,8 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 4 |
 | [Tooling & MCP](#tooling--mcp) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 10 |
-| **Total** | **20** |
+| [Related Practices & Discussions](#related-practices--discussions) | 12 |
+| **Total** | **22** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -56,7 +70,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 4 entries
 - [Tooling & MCP](#tooling--mcp) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 10 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 12 entries
 
 ## Full list
 
@@ -90,8 +104,9 @@ What does not belong here: the decompilation or port projects themselves (see th
 
 ### Related Practices & Discussions
 
-Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, X threads — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact. Entries here still need a claim someone made publicly, not a summary of a trend.
-What does not belong here: projects that belong in a project category, vendor announcements, and any post whose only content is excitement about AI.
+Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, threads where practitioners disagree, X articles — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact.
+**A public repository is not required here, and neither is an acceptance test.** When a subject has no artifact to check, this is where it goes, and that is a normal outcome rather than a polite rejection: a subject is worth recording while it is still being argued about. Entries still need a claim someone made publicly, not a summary of a trend.
+What does not belong here: projects that belong in a project category, vendor announcements, and any post whose only content is excitement about AI rather than description of work.
 
 - [Define correctness as PASS/FAIL, then let agents iterate](https://x.com/arpit_bhayani/status/2109505311904309621) - X thread: the transferable move is defining correctness as something a machine can decide and then letting agents iterate against it, because wrong decompiled code can look entirely plausible — and the pattern is not specific to games.
 - [Where "software is solved" is overstated](https://x.com/wangdou/status/2109404200513708307) - X breakdown: takes a widely shared claim apart point by point, quoting the core idea that a verifiable outcome can be looped against, and then separating that from the conclusion people draw from it.
@@ -103,6 +118,8 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Development Journey on Game Decompilation Using AI](https://gambiconf.substack.com/p/development-journey-on-game-decompilation) - Hands-on study: a GAMBIconf talk write-up on using AI to decompile retro games, built around an agent called Kappa that runs inside VS Code Copilot and works one function at a time.
 - [Claims that genAI speeds up PC ports of classic games are either "false" or missing the point](https://www.reddit.com/r/SBCGaming/comments/1wyhd5s/) - Discussion: argues the speed-up claims either fail outright or miss where porting actually spends its time, from a community that does the work.
 - [AI-generated decompilations are garbage](https://www.reddit.com/r/decomps/comments/1v6b9gw/) - Counterpoint: a decompilation community thread rejecting the AI output as unusable, kept here so the dissent stays attached to the positive entries.
+- [Why isn't decompilation a solved problem in the AI era?](https://news.ycombinator.com/item?id=49646640) - HN thread: asks why a general AI decompiler still does not exist when source-and-binary pairs are abundant and the compiler is a parameter a model can account for, and what exists to try today.
+- [How are y'all using ai to make recompilations?](https://www.reddit.com/r/recomps/comments/1wyle7y/) - Practice thread: a recompilation community trading notes on where agents actually help in the pipeline, which is the discussion equivalent of an acceptance test.
 
 ## Open categories still being seeded
 

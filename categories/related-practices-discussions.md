@@ -1,8 +1,10 @@
 # Related Practices & Discussions
 
-Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, X threads — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact. Entries here still need a claim someone made publicly, not a summary of a trend.
+Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, threads where practitioners disagree, X articles — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact.
 
-What does not belong here: projects that belong in a project category, vendor announcements, and any post whose only content is excitement about AI.
+**A public repository is not required here, and neither is an acceptance test.** When a subject has no artifact to check, this is where it goes, and that is a normal outcome rather than a polite rejection: a subject is worth recording while it is still being argued about. Entries still need a claim someone made publicly, not a summary of a trend.
+
+What does not belong here: projects that belong in a project category, vendor announcements, and any post whose only content is excitement about AI rather than description of work.
 
 - [Define correctness as PASS/FAIL, then let agents iterate](https://x.com/arpit_bhayani/status/2109505311904309621) - X thread: the transferable move is defining correctness as something a machine can decide and then letting agents iterate against it, because wrong decompiled code can look entirely plausible — and the pattern is not specific to games.
 - [Where "software is solved" is overstated](https://x.com/wangdou/status/2109404200513708307) - X breakdown: takes a widely shared claim apart point by point, quoting the core idea that a verifiable outcome can be looped against, and then separating that from the conclusion people draw from it.
@@ -14,3 +16,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Development Journey on Game Decompilation Using AI](https://gambiconf.substack.com/p/development-journey-on-game-decompilation) - Hands-on study: a GAMBIconf talk write-up on using AI to decompile retro games, built around an agent called Kappa that runs inside VS Code Copilot and works one function at a time.
 - [Claims that genAI speeds up PC ports of classic games are either "false" or missing the point](https://www.reddit.com/r/SBCGaming/comments/1wyhd5s/) - Discussion: argues the speed-up claims either fail outright or miss where porting actually spends its time, from a community that does the work.
 - [AI-generated decompilations are garbage](https://www.reddit.com/r/decomps/comments/1v6b9gw/) - Counterpoint: a decompilation community thread rejecting the AI output as unusable, kept here so the dissent stays attached to the positive entries.
+- [Why isn't decompilation a solved problem in the AI era?](https://news.ycombinator.com/item?id=49646640) - HN thread: asks why a general AI decompiler still does not exist when source-and-binary pairs are abundant and the compiler is a parameter a model can account for, and what exists to try today.
+- [How are y'all using ai to make recompilations?](https://www.reddit.com/r/recomps/comments/1wyle7y/) - Practice thread: a recompilation community trading notes on where agents actually help in the pipeline, which is the discussion equivalent of an acceptance test.
