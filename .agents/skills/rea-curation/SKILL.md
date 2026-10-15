@@ -69,7 +69,12 @@ Format, exactly one line and one sentence:
 
 **Verify every link yourself before it lands, and never reconstruct a URL from memory or from a truncated reading.** In this repository's first round, three entries were written with plausible-looking URLs that had never been checked; two did not exist and one pointed at the wrong post. The fix is not better guessing, it is a rule: if the link cannot be reached, the entry does not go in, and the lead is reported as unverified so the maintainer can supply it.
 
-Corollary: **a failed lookup is not proof of absence.** A source behind a WAF or a login wall, or a post outside the last dozen, may well exist. Report it as unverified rather than as non-existent, and try a second retrieval method before concluding anything — `web_fetch` with a browser fingerprint read a Cloudflare-blocked Microsoft page that plain `curl` could not.
+Corollary: **a failed lookup is not proof of absence, and the first query is not a test.** Both halves of that have already cost this list entries.
+
+- A Cloudflare-blocked page looked unreachable to `curl`, so a whole entry was parked as unverifiable. Fetching it with a browser-fingerprinted tool returned the full text, and the article turned out to have been **updated specifically to add Jev's benchmark numbers** — the strongest evidence of the round was in the source I had declared unavailable.
+- `gh search repos "mario kart wii recomp"` returned nothing, so a 1021-upvote story was written off as having no repository. Dropping the word `recomp` and searching `"mario kart wii"` found a **664★** project whose README carries a full AI disclosure.
+
+So the order is: **change the query, then change the retrieval method, and only then conclude.** Report a source as *unverified*, never as *non-existent*, and say which method failed.
 
 ### One project, one category
 
