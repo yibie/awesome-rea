@@ -61,8 +61,8 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
 | [Tooling & MCP](#tooling--mcp) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 15 |
-| **Total** | **26** |
+| [Related Practices & Discussions](#related-practices--discussions) | 17 |
+| **Total** | **28** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -70,7 +70,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
 - [Tooling & MCP](#tooling--mcp) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 15 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
 ## Full list
 
@@ -124,6 +124,8 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Zelda and Banjo Recompiled dev slams the slew of poor-quality "slopcomps"](https://www.reddit.com/r/technology/comments/1ww1twg/) - Discussion: an established recompilation developer names low-quality AI-assisted ports "slopcomps", and the thread argues whether that is gatekeeping or a real quality divide; the word is now the community's term for what this list declines to promote.
 - [Snowboard Kids 2 is 100% Decompiled](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/) - Milestone post: every function is implemented in C and compiles to assembly matching the original game, which is what "100%" means in this field rather than a claim that the port is finished.
 - [Finding Jingle Town: Debugging an N64 Game without Symbols](https://blog.chrislewis.au/finding-jingle-town-debugging-an-n64-game-without-symbols/) - Debugging write-up: using a debugger alongside the matched source to explain runtime behaviour once the original symbols are gone, which is the part of a decompilation that byte-matching does not cover.
+- [decomp.wtf](https://github.com/i12bp8/decomp.wtf) ![stars](https://img.shields.io/github/stars/i12bp8/decomp.wtf?style=flat-square&label=%E2%98%85) - Withdrawal: a 422-star tool that had an AI agent decompile games you own into compiling C, archived after pushback from the decompilation community, with the code left up under MIT and a request to use it only on games you own and not to share the code it produces - the strongest evidence yet that this community polices the line.
+- [Awesome Decomp Games](https://github.com/SubmitGame/awesome-decomp-games) ![stars](https://img.shields.io/github/stars/SubmitGame/awesome-decomp-games?style=flat-square&label=%E2%98%85) - Resource: a rated, auto-refreshed list of decompiled and recompiled games, generated from a data directory rather than hand-edited, which is the same acceptance-visible rule applied to a catalogue.
 
 ## Open categories still being seeded
 
