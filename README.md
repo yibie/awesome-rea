@@ -60,16 +60,16 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
-| [Tooling & MCP](#tooling--mcp) | 3 |
+| [Tooling & MCP](#tooling--mcp) | 4 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **28** |
+| **Total** | **29** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
-- [Tooling & MCP](#tooling--mcp) — 3 entries
+- [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
 ## Full list
@@ -102,6 +102,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [ida-mcp](https://github.com/HexRaysSA/ida-mcp) ![stars](https://img.shields.io/github/stars/HexRaysSA/ida-mcp?style=flat-square&label=%E2%98%85) - Tooling: Hex-Rays' official MCP server for IDA; the 500-billion-token decompilation ran on it for almost the whole project and credits it as stable and headless, which is the practical bar for tooling in this loop.
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![stars](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat-square&label=%E2%98%85) - Tooling: an MCP server that gives an agent disassembly and decompilation from IDA Pro, the most widely used entry point for agent-driven reversing.
 - [decomp-compat-kit](https://github.com/LinuxJessi/decomp-compat-kit) ![stars](https://img.shields.io/github/stars/LinuxJessi/decomp-compat-kit?style=flat-square&label=%E2%98%85) - Verification tooling: independent byte verification for matching decompilations, so the check runs outside the build the agents just produced.
+- [REA (Reverse Engineer Anything)](https://github.com/REA-Gith/REA) ![stars](https://img.shields.io/github/stars/REA-Gith/REA?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
 
 ### Related Practices & Discussions
 
