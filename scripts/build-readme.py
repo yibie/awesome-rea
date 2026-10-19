@@ -19,13 +19,12 @@ CATEGORIES = [
     ("game-decompilation.md", "Game Decompilation"),
     ("static-recompilation-native-ports.md", "Static Recompilation & Native Ports"),
     ("tooling-and-mcp.md", "Tooling & MCP"),
+    ("console-and-firmware.md", "Console & Firmware"),
     ("related-practices-discussions.md", "Related Practices & Discussions"),
 ]
 # Seeded but not yet qualifying: kept off the front page so an empty category
 # never reads as a claim.
-OPEN_TRACKING = [
-    ("console-and-firmware.md", "Console & Firmware"),
-]
+OPEN_TRACKING: list[tuple[str, str]] = []
 ALL_FILES = CATEGORIES + OPEN_TRACKING
 
 # - [Name](URL) - Domain: what the AI does, and what accepts the result.

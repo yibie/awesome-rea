@@ -61,8 +61,9 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 3 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
+| [Console & Firmware](#console--firmware) | 1 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **29** |
+| **Total** | **30** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -70,6 +71,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 3 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
+- [Console & Firmware](#console--firmware) — 1 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
 ## Full list
@@ -104,6 +106,12 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [decomp-compat-kit](https://github.com/LinuxJessi/decomp-compat-kit) ![stars](https://img.shields.io/github/stars/LinuxJessi/decomp-compat-kit?style=flat-square&label=%E2%98%85) - Verification tooling: independent byte verification for matching decompilations, so the check runs outside the build the agents just produced.
 - [REA (Reverse Engineer Anything)](https://github.com/REA-Gith/REA) ![stars](https://img.shields.io/github/stars/REA-Gith/REA?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
 
+### Console & Firmware
+
+Use this category for AI-assisted reverse engineering that is not a game: console firmware, embedded devices, boot ROMs, drivers, and the tooling around them. The same rule applies as everywhere else — the entry has to name the acceptance test, whether that is a checksum, a boot-to-menu milestone, an emulator run, or a hardware test on a real device.
+
+- [xbox-boot-re](https://github.com/bennyborn/xbox-boot-re) ![stars](https://img.shields.io/github/stars/bennyborn/xbox-boot-re?style=flat-square&label=%E2%98%85) - Firmware: reconstructs the original Xbox boot animation from a single 1 MB retail BIOS image, verified by matching the animation and its state bit for bit against recorded runs in the xemu emulator, down to the sound sequencer's DSP program; its README states that Claude Opus 5.5 produced most of the work under human direction.
+
 ### Related Practices & Discussions
 
 Use this category for credible public practice signals that describe how AI-assisted reverse engineering is actually being done — post-mortems, methodology write-ups, threads where practitioners disagree, X articles — especially when no standalone project page exists yet, or when the interesting part is the argument rather than the artifact.
@@ -127,9 +135,4 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Finding Jingle Town: Debugging an N64 Game without Symbols](https://blog.chrislewis.au/finding-jingle-town-debugging-an-n64-game-without-symbols/) - Debugging write-up: using a debugger alongside the matched source to explain runtime behaviour once the original symbols are gone, which is the part of a decompilation that byte-matching does not cover.
 - [decomp.wtf](https://github.com/i12bp8/decomp.wtf) ![stars](https://img.shields.io/github/stars/i12bp8/decomp.wtf?style=flat-square&label=%E2%98%85) - Withdrawal: a 422-star tool that had an AI agent decompile games you own into compiling C, archived after pushback from the decompilation community, with the code left up under MIT and a request to use it only on games you own and not to share the code it produces - the strongest evidence yet that this community polices the line.
 - [Awesome Decomp Games](https://github.com/SubmitGame/awesome-decomp-games) ![stars](https://img.shields.io/github/stars/SubmitGame/awesome-decomp-games?style=flat-square&label=%E2%98%85) - Resource: a rated, auto-refreshed list of decompiled and recompiled games, generated from a data directory rather than hand-edited, which is the same acceptance-visible rule applied to a catalogue.
-
-## Open categories still being seeded
-
-The categories below are tracked but deliberately empty: they stay off the front page until a qualifying entry exists, so that an empty category never reads as a claim.
-- **Console & Firmware** — tracked, no qualifying entries yet
 
