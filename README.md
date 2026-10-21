@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 4 |
+| [Game Decompilation](#game-decompilation) | 5 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
 | [Console & Firmware](#console--firmware) | 1 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **31** |
+| **Total** | **32** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 4 entries
+- [Game Decompilation](#game-decompilation) — 5 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Console & Firmware](#console--firmware) — 1 entries
@@ -85,6 +85,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [sm64ds-decomp](https://github.com/tangosdev/sm64ds-decomp) ![stars](https://img.shields.io/github/stars/tangosdev/sm64ds-decomp?style=flat-square&label=%E2%98%85) - Decompilation: an agent team rebuilds Super Mario 64 DS function by function against the retail cartridge, with progress tracked per function (11,385 of 11,389 matched) and each match gated by independent byte comparison, a source review gate and a relocation destination audit; the same repository ships a PC port kept honest by a smoke build that has to stay green.
 - [Xenosaga Ep I Decompilation Project](https://scientia.godsibb.net/t/xenosaga-ep-i-decompilation-project/1496) - Decompilation: one person reached 3,669 of 7,645 game functions in a little over a week with AI assistance, using matching decompilation as the criterion and an independent byte checker that does not trust the build the agents produce.
 - [DecompPipeline](https://github.com/GeneralAtrox/DecompPipeline) ![stars](https://img.shields.io/github/stars/GeneralAtrox/DecompPipeline?style=flat-square&label=%E2%98%85) - Behaviour-checked decompilation: asks whether a small model (Haiku) can decompile game functions when the agent runs in a locked-down `claude -p` session against Ghidra and an emulator oracle, and stamps every harness with its oracle input so a stale harness cannot pass for a current one.
+- [A Link Between Worlds decompilation](https://github.com/7akeem0/albw-decomp-ai) ![stars](https://img.shields.io/github/stars/7akeem0/albw-decomp-ai?style=flat-square&label=%E2%98%85) - Decompilation: many LLM agents each take one function of the 3DS Zelda until it compiles to exactly the same bytes, and the progress table separates the 16,544 functions matched (63.7%) from the 882 of those that only matched with a hack.
 
 ### Static Recompilation & Native Ports
 
