@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 5 |
+| [Game Decompilation](#game-decompilation) | 7 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **33** |
+| **Total** | **35** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 5 entries
+- [Game Decompilation](#game-decompilation) — 7 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Console & Firmware](#console--firmware) — 2 entries
@@ -86,6 +86,8 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Xenosaga Ep I Decompilation Project](https://scientia.godsibb.net/t/xenosaga-ep-i-decompilation-project/1496) - Decompilation: one person reached 3,669 of 7,645 game functions in a little over a week with AI assistance, using matching decompilation as the criterion and an independent byte checker that does not trust the build the agents produce.
 - [DecompPipeline](https://github.com/GeneralAtrox/DecompPipeline) ![stars](https://img.shields.io/github/stars/GeneralAtrox/DecompPipeline?style=flat-square&label=%E2%98%85) - Behaviour-checked decompilation: asks whether a small model (Haiku) can decompile game functions when the agent runs in a locked-down `claude -p` session against Ghidra and an emulator oracle, and stamps every harness with its oracle input so a stale harness cannot pass for a current one.
 - [A Link Between Worlds decompilation](https://github.com/7akeem0/albw-decomp-ai) ![stars](https://img.shields.io/github/stars/7akeem0/albw-decomp-ai?style=flat-square&label=%E2%98%85) - Decompilation: many LLM agents each take one function of the 3DS Zelda until it compiles to exactly the same bytes, and the progress table separates the 16,544 functions matched (63.7%) from the 882 of those that only matched with a hack.
+- [Pokemon HeartGold/SoulSilver single-screen](https://github.com/ClickingMaster/pokeheartgold-single-screen) ![stars](https://img.shields.io/github/stars/ClickingMaster/pokeheartgold-single-screen?style=flat-square&label=%E2%98%85) - Decompilation fork: a single-screen build of the fully decompiled HeartGold and SoulSilver where both ROMs build byte-for-byte, whose README opens by disclosing that nearly all of the fork's changes were written by Claude through Claude Code - and notes that the upstream project does not accept AI-generated contributions.
+- [Monster Hunter 2 decompilation](https://github.com/Batenkaitos-dev/mh2-decomp) ![stars](https://img.shields.io/github/stars/Batenkaitos-dev/mh2-decomp?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the boot executable and all 12 code overlays byte for byte, and says plainly that readability work was deliberately deferred until the whole build matched, with a `Co-Authored-By: Claude 5.5` trailer on the commits.
 
 ### Static Recompilation & Native Ports
 
