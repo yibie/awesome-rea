@@ -61,9 +61,9 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 5 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
-| [Console & Firmware](#console--firmware) | 1 |
+| [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **32** |
+| **Total** | **33** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -71,7 +71,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 5 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
-- [Console & Firmware](#console--firmware) — 1 entries
+- [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
 ## Full list
@@ -110,9 +110,10 @@ What does not belong here: the decompilation or port projects themselves (see th
 
 ### Console & Firmware
 
-Use this category for AI-assisted reverse engineering that is not a game: console firmware, embedded devices, boot ROMs, drivers, and the tooling around them. The same rule applies as everywhere else — the entry has to name the acceptance test, whether that is a checksum, a boot-to-menu milestone, an emulator run, or a hardware test on a real device.
+Use this category for AI-assisted reverse engineering that is not a game: console firmware, embedded devices, boot ROMs, drivers, platform compatibility layers that reimplement an OS surface Wine-style, and the tooling around them. The same rule applies as everywhere else — the entry has to name the acceptance test, whether that is a checksum, a boot-to-menu milestone, an emulator run, or a hardware test on a real device.
 
 - [xbox-boot-re](https://github.com/bennyborn/xbox-boot-re) ![stars](https://img.shields.io/github/stars/bennyborn/xbox-boot-re?style=flat-square&label=%E2%98%85) - Firmware: reconstructs the original Xbox boot animation from a single 1 MB retail BIOS image, verified by matching the animation and its state bit for bit against recorded runs in the xemu emulator, down to the sound sequencer's DSP program; its README states that Claude Opus 5.5 produced most of the work under human direction.
+- [Champagne](https://github.com/unixzii/Champagne) ![stars](https://img.shields.io/github/stars/unixzii/Champagne?style=flat-square&label=%E2%98%85) - Platform layer: runs Snow Leopard applications on macOS and Windows without a virtual machine, Wine-style, verified by a "what works" list rather than a promise - TextEdit is fully usable and Calculator, Stickies, Font Book, Dictionary and the Finder open - and all 28 of its commits carry a `Co-Authored-By: Claude Opus 5.5` trailer.
 
 ### Related Practices & Discussions
 
