@@ -58,18 +58,18 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 8 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 5 |
+| [Game Decompilation](#game-decompilation) | 9 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 6 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **36** |
+| **Total** | **38** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 8 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 5 entries
+- [Game Decompilation](#game-decompilation) — 9 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 6 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -89,6 +89,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Pokemon HeartGold/SoulSilver single-screen](https://github.com/ClickingMaster/pokeheartgold-single-screen) ![stars](https://img.shields.io/github/stars/ClickingMaster/pokeheartgold-single-screen?style=flat-square&label=%E2%98%85) - Decompilation fork: a single-screen build of the fully decompiled HeartGold and SoulSilver where both ROMs build byte-for-byte, whose README opens by disclosing that nearly all of the fork's changes were written by Claude through Claude Code - and notes that the upstream project does not accept AI-generated contributions.
 - [Monster Hunter 2 decompilation](https://github.com/Batenkaitos-dev/mh2-decomp) ![stars](https://img.shields.io/github/stars/Batenkaitos-dev/mh2-decomp?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the boot executable and all 12 code overlays byte for byte, and says plainly that readability work was deliberately deferred until the whole build matched, with a `Co-Authored-By: Claude 5.5` trailer on the commits.
 - [Way of the Samurai (PS2)](https://github.com/dnb4ever/way-of-the-samurai-decomp) ![stars](https://img.shields.io/github/stars/dnb4ever/way-of-the-samurai-decomp?style=flat-square&label=%E2%98%85) - Decompilation: AI agents rebuild the PS2 game function by function under a source-patched ee-gcc 2.9, each match gated by an independent byte comparison that compiles the C, links it at the function's real address and requires the bytes to equal the retail binary (score 0 or it does not count); a parallel static-recompilation port built on the same decompilation already boots the recompiled Emotion Engine code to its first rendered frame.
+- [gagarin](https://github.com/r-melvin/gagarin) ![stars](https://img.shields.io/github/stars/r-melvin/gagarin?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the Red Alert 2 / Yuri's Revenge engine, with a README that draws the line the whole field needs - function matching and successful compilation do not prove behaviour.
 
 ### Static Recompilation & Native Ports
 
@@ -100,6 +101,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [ssbu-recomp](https://github.com/Denkishi/ssbu-recomp) ![stars](https://img.shields.io/github/stars/Denkishi/ssbu-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: Super Smash Bros. Ultimate 13.0.4 rebuilt as a native Windows program with Vulkan rendering, verified by a per-mode compatibility matrix that marks modes "works", "tested with scripted input only" or "not tested", plus frame-time measurements including a whole match at 59-60 fps on an integrated GPU.
 - [VandalHearts-decomp](https://github.com/HalmyLyseas/VandalHearts-decomp-SLPM-86007) ![stars](https://img.shields.io/github/stars/HalmyLyseas/VandalHearts-decomp-SLPM-86007?style=flat-square&label=%E2%98%85) - Native port: Vandal Hearts rebuilt for PC on top of a byte-exact matching decompilation, so the port inherits the decompilation's byte comparison as its correctness check.
 - [KartPad](https://github.com/chrissotraidis/kartpad) ![stars](https://img.shields.io/github/stars/chrissotraidis/kartpad?style=flat-square&label=%E2%98%85) - Native port: Mario Kart Wii and Retro Rewind running natively on iOS, iPadOS, macOS, tvOS and Android, verified by requiring a legally obtained PAL `RMCP01` revision 0 image and by build, test and device records, and its README discloses substantial AI assistance with no audited percentage of generated code.
+- [Precursor](https://github.com/thebardockgames/Precursor) ![stars](https://img.shields.io/github/stars/thebardockgames/Precursor?style=flat-square&label=%E2%98%85) - Native port: an unofficial Android ARM64 port of Jak and Daxter built on the decompilation, whose README states that the fork is developed with AI help and that commits are marked `(AI-assisted)`, and warns that none of it has been verified end to end.
 
 ### Tooling & MCP
 
