@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 9 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 7 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 9 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **39** |
+| **Total** | **41** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 9 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 7 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 9 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -103,6 +103,8 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [KartPad](https://github.com/chrissotraidis/kartpad) ![stars](https://img.shields.io/github/stars/chrissotraidis/kartpad?style=flat-square&label=%E2%98%85) - Native port: Mario Kart Wii and Retro Rewind running natively on iOS, iPadOS, macOS, tvOS and Android, verified by requiring a legally obtained PAL `RMCP01` revision 0 image and by build, test and device records, and its README discloses substantial AI assistance with no audited percentage of generated code.
 - [diehard-stv-decomp](https://github.com/dnb4ever/diehard-stv-decomp) ![stars](https://img.shields.io/github/stars/dnb4ever/diehard-stv-decomp?style=flat-square&label=%E2%98%85) - Static recompilation: AI agents statically recompile Die Hard Arcade / Dynamite Deka (Sega ST-V, dual Hitachi SH-2) to C++ and reconstruct its game logic as equivalence-faithful C, with byte-matching ruled out because the 1996 Hitachi SHC compiler build is lost, so correctness is gated by semantic 0-diff validation of the recompiled functions against an SH-2 interpreter oracle plus a compile-clean equivalence bar for the hand-decompiled C, all run against the user's own reconstructed cart dump.
 - [Precursor](https://github.com/thebardockgames/Precursor) ![stars](https://img.shields.io/github/stars/thebardockgames/Precursor?style=flat-square&label=%E2%98%85) - Native port: an unofficial Android ARM64 port of Jak and Daxter built on the decompilation, whose README states that the fork is developed with AI help and that commits are marked `(AI-assisted)`, and warns that none of it has been verified end to end.
+- [Railroad Tycoon 2 in Rust](https://github.com/pedryvo/rrt2-decomp) ![stars](https://img.shields.io/github/stars/pedryvo/rrt2-decomp?style=flat-square&label=%E2%98%85) - Native reimplementation: reverse engineering and a modern Rust rewrite of the game, with twenty of its recent commits carrying an AI co-author trailer.
+- [Mario Strikers Charged on PS Vita](https://github.com/CBOC-Vita-Lab/strikers-charged-vita) ![stars](https://img.shields.io/github/stars/CBOC-Vita-Lab/strikers-charged-vita?style=flat-square&label=%E2%98%85) - Native port: Mario Strikers Charged running on the PS Vita with no emulation involved, across four thousand files whose commits carry AI co-author trailers.
 
 ### Tooling & MCP
 
@@ -112,7 +114,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [ida-mcp](https://github.com/HexRaysSA/ida-mcp) ![stars](https://img.shields.io/github/stars/HexRaysSA/ida-mcp?style=flat-square&label=%E2%98%85) - Tooling: Hex-Rays' official MCP server for IDA; the 500-billion-token decompilation ran on it for almost the whole project and credits it as stable and headless, which is the practical bar for tooling in this loop.
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![stars](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat-square&label=%E2%98%85) - Tooling: an MCP server that gives an agent disassembly and decompilation from IDA Pro, the most widely used entry point for agent-driven reversing.
 - [decomp-compat-kit](https://github.com/LinuxJessi/decomp-compat-kit) ![stars](https://img.shields.io/github/stars/LinuxJessi/decomp-compat-kit?style=flat-square&label=%E2%98%85) - Verification tooling: independent byte verification for matching decompilations, so the check runs outside the build the agents just produced.
-- [REA (Reverse Engineer Anything)](https://github.com/REA-Gith/REA) ![stars](https://img.shields.io/github/stars/REA-Gith/REA?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
+- [REA (Reverse Engineer Anything)](https://github.com/ReverseEngineer-Anything/REA-Github) ![stars](https://img.shields.io/github/stars/ReverseEngineer-Anything/REA-Github?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
 
 ### Console & Firmware
 
