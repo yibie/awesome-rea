@@ -58,18 +58,18 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 9 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 9 |
+| [Game Decompilation](#game-decompilation) | 10 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 10 |
 | [Tooling & MCP](#tooling--mcp) | 4 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **41** |
+| **Total** | **43** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 9 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 9 entries
+- [Game Decompilation](#game-decompilation) — 10 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 10 entries
 - [Tooling & MCP](#tooling--mcp) — 4 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -90,6 +90,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Monster Hunter 2 decompilation](https://github.com/Batenkaitos-dev/mh2-decomp) ![stars](https://img.shields.io/github/stars/Batenkaitos-dev/mh2-decomp?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the boot executable and all 12 code overlays byte for byte, and says plainly that readability work was deliberately deferred until the whole build matched, with a `Co-Authored-By: Claude 5.5` trailer on the commits.
 - [Way of the Samurai (PS2)](https://github.com/dnb4ever/way-of-the-samurai-decomp) ![stars](https://img.shields.io/github/stars/dnb4ever/way-of-the-samurai-decomp?style=flat-square&label=%E2%98%85) - Decompilation: AI agents rebuild the PS2 game function by function under a source-patched ee-gcc 2.9, each match gated by an independent byte comparison that compiles the C, links it at the function's real address and requires the bytes to equal the retail binary (score 0 or it does not count); a parallel static-recompilation port built on the same decompilation already boots the recompiled Emotion Engine code to its first rendered frame.
 - [gagarin](https://github.com/r-melvin/gagarin) ![stars](https://img.shields.io/github/stars/r-melvin/gagarin?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the Red Alert 2 / Yuri's Revenge engine, with a README that draws the line the whole field needs - function matching and successful compilation do not prove behaviour.
+- [civ2](https://github.com/richardpenman/civ2) ![stars](https://img.shields.io/github/stars/richardpenman/civ2?style=flat-square&label=%E2%98%85) - Reconstruction: Civilization II turned into portable C++ that builds on Linux, macOS and Windows and is proven by matching screens pixel for pixel - 25 of 29 recorded scenarios match exactly, and the README says where the other four differ.
 
 ### Static Recompilation & Native Ports
 
@@ -105,6 +106,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Precursor](https://github.com/thebardockgames/Precursor) ![stars](https://img.shields.io/github/stars/thebardockgames/Precursor?style=flat-square&label=%E2%98%85) - Native port: an unofficial Android ARM64 port of Jak and Daxter built on the decompilation, whose README states that the fork is developed with AI help and that commits are marked `(AI-assisted)`, and warns that none of it has been verified end to end.
 - [Railroad Tycoon 2 in Rust](https://github.com/pedryvo/rrt2-decomp) ![stars](https://img.shields.io/github/stars/pedryvo/rrt2-decomp?style=flat-square&label=%E2%98%85) - Native reimplementation: reverse engineering and a modern Rust rewrite of the game, with twenty of its recent commits carrying an AI co-author trailer.
 - [Mario Strikers Charged on PS Vita](https://github.com/CBOC-Vita-Lab/strikers-charged-vita) ![stars](https://img.shields.io/github/stars/CBOC-Vita-Lab/strikers-charged-vita?style=flat-square&label=%E2%98%85) - Native port: Mario Strikers Charged running on the PS Vita with no emulation involved, across four thousand files whose commits carry AI co-author trailers.
+- [Glassline](https://github.com/MoonCellar-Team/Glassline) ![stars](https://img.shields.io/github/stars/MoonCellar-Team/Glassline?style=flat-square&label=%E2%98%85) - Native port: the 2010 iPad build of Mirror's Edge running on Linux, with an AI Disclosure section that names Claude Code outright rather than leaving it to the commit history.
 
 ### Tooling & MCP
 
