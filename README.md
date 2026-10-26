@@ -58,19 +58,19 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 10 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 10 |
-| [Tooling & MCP](#tooling--mcp) | 4 |
+| [Game Decompilation](#game-decompilation) | 11 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 11 |
+| [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **43** |
+| **Total** | **46** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 10 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 10 entries
-- [Tooling & MCP](#tooling--mcp) — 4 entries
+- [Game Decompilation](#game-decompilation) — 11 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 11 entries
+- [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
@@ -91,6 +91,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Way of the Samurai (PS2)](https://github.com/dnb4ever/way-of-the-samurai-decomp) ![stars](https://img.shields.io/github/stars/dnb4ever/way-of-the-samurai-decomp?style=flat-square&label=%E2%98%85) - Decompilation: AI agents rebuild the PS2 game function by function under a source-patched ee-gcc 2.9, each match gated by an independent byte comparison that compiles the C, links it at the function's real address and requires the bytes to equal the retail binary (score 0 or it does not count); a parallel static-recompilation port built on the same decompilation already boots the recompiled Emotion Engine code to its first rendered frame.
 - [gagarin](https://github.com/r-melvin/gagarin) ![stars](https://img.shields.io/github/stars/r-melvin/gagarin?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the Red Alert 2 / Yuri's Revenge engine, with a README that draws the line the whole field needs - function matching and successful compilation do not prove behaviour.
 - [civ2](https://github.com/richardpenman/civ2) ![stars](https://img.shields.io/github/stars/richardpenman/civ2?style=flat-square&label=%E2%98%85) - Reconstruction: Civilization II turned into portable C++ that builds on Linux, macOS and Windows and is proven by matching screens pixel for pixel - 25 of 29 recorded scenarios match exactly, and the README says where the other four differ.
+- [IGI-RE](https://github.com/slickdaddyy/IGI-RE) ![stars](https://img.shields.io/github/stars/slickdaddyy/IGI-RE?style=flat-square&label=%E2%98%85) - Decompilation: Project I.G.I. from 2000 rewritten as readable C one verified function at a time, which is the acceptance criterion stated in its first paragraph.
 
 ### Static Recompilation & Native Ports
 
@@ -107,6 +108,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Railroad Tycoon 2 in Rust](https://github.com/pedryvo/rrt2-decomp) ![stars](https://img.shields.io/github/stars/pedryvo/rrt2-decomp?style=flat-square&label=%E2%98%85) - Native reimplementation: reverse engineering and a modern Rust rewrite of the game, with twenty of its recent commits carrying an AI co-author trailer.
 - [Mario Strikers Charged on PS Vita](https://github.com/CBOC-Vita-Lab/strikers-charged-vita) ![stars](https://img.shields.io/github/stars/CBOC-Vita-Lab/strikers-charged-vita?style=flat-square&label=%E2%98%85) - Native port: Mario Strikers Charged running on the PS Vita with no emulation involved, across four thousand files whose commits carry AI co-author trailers.
 - [Glassline](https://github.com/MoonCellar-Team/Glassline) ![stars](https://img.shields.io/github/stars/MoonCellar-Team/Glassline?style=flat-square&label=%E2%98%85) - Native port: the 2010 iPad build of Mirror's Edge running on Linux, with an AI Disclosure section that names Claude Code outright rather than leaving it to the commit history.
+- [SegaSonic The Hedgehog native port](https://github.com/cheviman/segasonic-port) ![stars](https://img.shields.io/github/stars/cheviman/segasonic-port?style=flat-square&label=%E2%98%85) - Native port: the 1993 System 32 arcade game's own program decompiled into C and built for Windows, Linux, macOS, Switch and Android - explicitly not an emulator - with AI participation recorded only in twenty commit trailers.
 
 ### Tooling & MCP
 
@@ -117,6 +119,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp) ![stars](https://img.shields.io/github/stars/mrexodia/ida-pro-mcp?style=flat-square&label=%E2%98%85) - Tooling: an MCP server that gives an agent disassembly and decompilation from IDA Pro, the most widely used entry point for agent-driven reversing.
 - [decomp-compat-kit](https://github.com/LinuxJessi/decomp-compat-kit) ![stars](https://img.shields.io/github/stars/LinuxJessi/decomp-compat-kit?style=flat-square&label=%E2%98%85) - Verification tooling: independent byte verification for matching decompilations, so the check runs outside the build the agents just produced.
 - [REA (Reverse Engineer Anything)](https://github.com/ReverseEngineer-Anything/REA-Github) ![stars](https://img.shields.io/github/stars/ReverseEngineer-Anything/REA-Github?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
+- [Game Decompilation Skill for Claude](https://github.com/lemiur/Game-Decompilation-Skill-For-Claude) ![stars](https://img.shields.io/github/stars/lemiur/Game-Decompilation-Skill-For-Claude?style=flat-square&label=%E2%98%85) - Method as a skill: a set of Claude Code skills describing how to reconstruct, diagnose, permute, review and merge a byte-matching decompilation, kept project-independent by letting each game repository supply its own commands and conventions through an `AGENTS.md` file.
 
 ### Console & Firmware
 
