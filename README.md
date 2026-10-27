@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 11 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 11 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 12 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **46** |
+| **Total** | **47** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 11 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 11 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 12 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -109,6 +109,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Mario Strikers Charged on PS Vita](https://github.com/CBOC-Vita-Lab/strikers-charged-vita) ![stars](https://img.shields.io/github/stars/CBOC-Vita-Lab/strikers-charged-vita?style=flat-square&label=%E2%98%85) - Native port: Mario Strikers Charged running on the PS Vita with no emulation involved, across four thousand files whose commits carry AI co-author trailers.
 - [Glassline](https://github.com/MoonCellar-Team/Glassline) ![stars](https://img.shields.io/github/stars/MoonCellar-Team/Glassline?style=flat-square&label=%E2%98%85) - Native port: the 2010 iPad build of Mirror's Edge running on Linux, with an AI Disclosure section that names Claude Code outright rather than leaving it to the commit history.
 - [SegaSonic The Hedgehog native port](https://github.com/cheviman/segasonic-port) ![stars](https://img.shields.io/github/stars/cheviman/segasonic-port?style=flat-square&label=%E2%98%85) - Native port: the 1993 System 32 arcade game's own program decompiled into C and built for Windows, Linux, macOS, Switch and Android - explicitly not an emulator - with AI participation recorded only in twenty commit trailers.
+- [mugen-unleashed](https://github.com/zxmarcos/mugen-unleashed) ![stars](https://img.shields.io/github/stars/zxmarcos/mugen-unleashed?style=flat-square&label=%E2%98%85) - Reconstruction: the M.U.G.E.N 1.1 Beta 1 engine recovered from its original 2013 executable into C that builds a native mugen.exe running the game the way the original does, shipping no game data and none of Elecbyte's files, with AI participation recorded in the commit trailers rather than the README.
 
 ### Tooling & MCP
 
