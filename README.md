@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 11 |
+| [Game Decompilation](#game-decompilation) | 13 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 14 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **49** |
+| **Total** | **51** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 11 entries
+- [Game Decompilation](#game-decompilation) — 13 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 14 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
@@ -92,6 +92,8 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [gagarin](https://github.com/r-melvin/gagarin) ![stars](https://img.shields.io/github/stars/r-melvin/gagarin?style=flat-square&label=%E2%98%85) - Decompilation: rebuilds the Red Alert 2 / Yuri's Revenge engine, with a README that draws the line the whole field needs - function matching and successful compilation do not prove behaviour.
 - [civ2](https://github.com/richardpenman/civ2) ![stars](https://img.shields.io/github/stars/richardpenman/civ2?style=flat-square&label=%E2%98%85) - Reconstruction: Civilization II turned into portable C++ that builds on Linux, macOS and Windows and is proven by matching screens pixel for pixel - 25 of 29 recorded scenarios match exactly, and the README says where the other four differ.
 - [IGI-RE](https://github.com/slickdaddyy/IGI-RE) ![stars](https://img.shields.io/github/stars/slickdaddyy/IGI-RE?style=flat-square&label=%E2%98%85) - Decompilation: Project I.G.I. from 2000 rewritten as readable C one verified function at a time, which is the acceptance criterion stated in its first paragraph.
+- [Tony Hawk's Pro Skater 64](https://github.com/andrewnakas/thps64) ![stars](https://img.shields.io/github/stars/andrewnakas/thps64?style=flat-square&label=%E2%98%85) - Decompilation: the N64 game fully decompiled, with AI participation stated in the README and carried in six of its commit trailers.
+- [Crackdown 2 decompilation](https://github.com/matty45/Crackdown2-Decomp) ![stars](https://img.shields.io/github/stars/matty45/Crackdown2-Decomp?style=flat-square&label=%E2%98%85) - Decompilation: a byte-matching reconstruction of Crackdown 2, with AI participation recorded in the README and in two commit trailers.
 
 ### Static Recompilation & Native Ports
 
