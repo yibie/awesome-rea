@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 11 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 12 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 14 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **47** |
+| **Total** | **49** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 11 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 12 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 14 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -110,6 +110,8 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Glassline](https://github.com/MoonCellar-Team/Glassline) ![stars](https://img.shields.io/github/stars/MoonCellar-Team/Glassline?style=flat-square&label=%E2%98%85) - Native port: the 2010 iPad build of Mirror's Edge running on Linux, with an AI Disclosure section that names Claude Code outright rather than leaving it to the commit history.
 - [SegaSonic The Hedgehog native port](https://github.com/cheviman/segasonic-port) ![stars](https://img.shields.io/github/stars/cheviman/segasonic-port?style=flat-square&label=%E2%98%85) - Native port: the 1993 System 32 arcade game's own program decompiled into C and built for Windows, Linux, macOS, Switch and Android - explicitly not an emulator - with AI participation recorded only in twenty commit trailers.
 - [mugen-unleashed](https://github.com/zxmarcos/mugen-unleashed) ![stars](https://img.shields.io/github/stars/zxmarcos/mugen-unleashed?style=flat-square&label=%E2%98%85) - Reconstruction: the M.U.G.E.N 1.1 Beta 1 engine recovered from its original 2013 executable into C that builds a native mugen.exe running the game the way the original does, shipping no game data and none of Elecbyte's files, with AI participation recorded in the commit trailers rather than the README.
+- [COGBox](https://github.com/Shagg88/COGBox) ![stars](https://img.shields.io/github/stars/Shagg88/COGBox?style=flat-square&label=%E2%98%85) - Native port suite: a launcher for native Windows versions of Gears of War 2, 3 and Judgment that unpacks your own copy of each game, checks it is the right release, and starts it, with AI participation recorded in thirty-six commit trailers.
+- [Echoes Unbound](https://github.com/Odrannnn/MetroidPrime2Port) ![stars](https://img.shields.io/github/stars/Odrannnn/MetroidPrime2Port?style=flat-square&label=%E2%98%85) - Native port: Metroid Prime 2 for Linux, Windows, macOS, Android and experimental iOS, across six thousand files, with a Linux build running in CI and the first alpha scheduled for release.
 
 ### Tooling & MCP
 
