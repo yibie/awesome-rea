@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 13 |
+| [Game Decompilation](#game-decompilation) | 14 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 15 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **52** |
+| **Total** | **53** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 13 entries
+- [Game Decompilation](#game-decompilation) — 14 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 15 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
@@ -94,6 +94,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [IGI-RE](https://github.com/slickdaddyy/IGI-RE) ![stars](https://img.shields.io/github/stars/slickdaddyy/IGI-RE?style=flat-square&label=%E2%98%85) - Decompilation: Project I.G.I. from 2000 rewritten as readable C one verified function at a time, which is the acceptance criterion stated in its first paragraph.
 - [Tony Hawk's Pro Skater 64](https://github.com/andrewnakas/thps64) ![stars](https://img.shields.io/github/stars/andrewnakas/thps64?style=flat-square&label=%E2%98%85) - Decompilation: the N64 game fully decompiled, with AI participation stated in the README and carried in six of its commit trailers.
 - [Crackdown 2 decompilation](https://github.com/matty45/Crackdown2-Decomp) ![stars](https://img.shields.io/github/stars/matty45/Crackdown2-Decomp?style=flat-square&label=%E2%98%85) - Decompilation: a byte-matching reconstruction of Crackdown 2, with AI participation recorded in the README and in two commit trailers.
+- [Redivivus](https://github.com/jaenster/redivivus) ![stars](https://img.shields.io/github/stars/jaenster/redivivus?style=flat-square&label=%E2%98%85) - Decompilation: agents propose names and types into the Diablo II 1.14d Ghidra databases over a read-only MCP server, and a generator emits the C++ tree; accepted by recompiling with the original Visual C++ 2005 SP1 and byte-comparing each function against retail Game.exe, 5,689 of 14,812 matched (38.4%).
 
 ### Static Recompilation & Native Ports
 
