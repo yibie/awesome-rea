@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 14 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 16 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 17 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **54** |
+| **Total** | **55** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 14 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 16 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 17 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -117,6 +117,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Echoes Unbound](https://github.com/Odrannnn/MetroidPrime2Port) ![stars](https://img.shields.io/github/stars/Odrannnn/MetroidPrime2Port?style=flat-square&label=%E2%98%85) - Native port: Metroid Prime 2 for Linux, Windows, macOS, Android and experimental iOS, across six thousand files, with a Linux build running in CI and the first alpha scheduled for release.
 - [X-Men 2: Clone Wars native PC](https://github.com/crabsmack/xmen2-pc) ![stars](https://img.shields.io/github/stars/crabsmack/xmen2-pc?style=flat-square&label=%E2%98%85) - Native port: the Genesis game rebuilt as a native PC game across three thousand files, with AI participation recorded in twenty-one commit trailers.
 - [Need for Speed macOS ARM64 recompilations](https://github.com/007hacky007/nfs-most-wanted-macos-arm64) ![stars](https://img.shields.io/github/stars/007hacky007/nfs-most-wanted-macos-arm64?style=flat-square&label=%E2%98%85) - Static recompilation: one author's family of native Apple Silicon builds of Most Wanted (2005), [High Stakes](https://github.com/007hacky007/need-for-speed-4-macos-arm64) and [Porsche Unleashed](https://github.com/007hacky007/nfs-porsche-macos-arm64) that lift the supported x86 PC executable to C and compile it to ARM64 with Metal rendering, with AI coding agents implementing the work from plans committed under `docs/superpowers` in the Most Wanted and High Stakes repositories, gated by a required size and SHA-256 match of the user's extracted game files against one documented release (per file for Most Wanted, an aggregate fingerprint for the other two) before anything is translated, plus a Most Wanted test matrix that separates the complete four-ISO-to-app build and native race runs from inputs checked only as far as extraction.
+- [gearhead-garage-macos-arm64](https://github.com/007hacky007/gearhead-garage-macos-arm64) ![stars](https://img.shields.io/github/stars/007hacky007/gearhead-garage-macos-arm64?style=flat-square&label=%E2%98%85) - Native port: an AI coding agent, directed by the author, statically recompiled Snap-on Gearhead Garage (1999, Windows) and its two video drivers to C for a native Apple Silicon macOS app and wrote its DirectDraw, Direct3D 5-on-Metal and DirectSound 3D runtime, verified by requiring the player's own copy to match a SHA-256 manifest of all 122 game files and by scripted-input runs whose captured frames were checked screen by screen, with a full job, the Car Lot and the Auction listed as not yet tested.
 
 ### Tooling & MCP
 
