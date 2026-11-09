@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 14 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 15 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 16 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **53** |
+| **Total** | **54** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 14 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 15 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 16 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -116,6 +116,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [COGBox](https://github.com/Shagg88/COGBox) ![stars](https://img.shields.io/github/stars/Shagg88/COGBox?style=flat-square&label=%E2%98%85) - Native port suite: a launcher for native Windows versions of Gears of War 2, 3 and Judgment that unpacks your own copy of each game, checks it is the right release, and starts it, with AI participation recorded in thirty-six commit trailers.
 - [Echoes Unbound](https://github.com/Odrannnn/MetroidPrime2Port) ![stars](https://img.shields.io/github/stars/Odrannnn/MetroidPrime2Port?style=flat-square&label=%E2%98%85) - Native port: Metroid Prime 2 for Linux, Windows, macOS, Android and experimental iOS, across six thousand files, with a Linux build running in CI and the first alpha scheduled for release.
 - [X-Men 2: Clone Wars native PC](https://github.com/crabsmack/xmen2-pc) ![stars](https://img.shields.io/github/stars/crabsmack/xmen2-pc?style=flat-square&label=%E2%98%85) - Native port: the Genesis game rebuilt as a native PC game across three thousand files, with AI participation recorded in twenty-one commit trailers.
+- [Dark Souls on PS2](https://github.com/nekomancer01/DarkSoulsPS2) ![stars](https://img.shields.io/github/stars/nekomancer01/DarkSoulsPS2?style=flat-square&label=%E2%98%85) - Homebrew port: Dark Souls Remastered rebuilt as a PS2 homebrew title on a custom C/VU1 engine, with AI participation stated in the README and carried in twenty commit trailers.
 
 ### Tooling & MCP
 
