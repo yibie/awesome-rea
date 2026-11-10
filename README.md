@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 14 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 16 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 19 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 2 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **54** |
+| **Total** | **57** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 14 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 16 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 19 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 2 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -117,6 +117,9 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Echoes Unbound](https://github.com/Odrannnn/MetroidPrime2Port) ![stars](https://img.shields.io/github/stars/Odrannnn/MetroidPrime2Port?style=flat-square&label=%E2%98%85) - Native port: Metroid Prime 2 for Linux, Windows, macOS, Android and experimental iOS, across six thousand files, with a Linux build running in CI and the first alpha scheduled for release.
 - [X-Men 2: Clone Wars native PC](https://github.com/crabsmack/xmen2-pc) ![stars](https://img.shields.io/github/stars/crabsmack/xmen2-pc?style=flat-square&label=%E2%98%85) - Native port: the Genesis game rebuilt as a native PC game across three thousand files, with AI participation recorded in twenty-one commit trailers.
 - [Dark Souls on PS2](https://github.com/nekomancer01/DarkSoulsPS2) ![stars](https://img.shields.io/github/stars/nekomancer01/DarkSoulsPS2?style=flat-square&label=%E2%98%85) - Homebrew port: Dark Souls Remastered rebuilt as a PS2 homebrew title on a custom C/VU1 engine, with AI participation stated in the README and carried in twenty commit trailers.
+- [Colin McRae Rally 2005 native port](https://github.com/projectedan/McRae05-XBE-Recomp) ![stars](https://img.shields.io/github/stars/projectedan/McRae05-XBE-Recomp?style=flat-square&label=%E2%98%85) - Native port: the Xbox build statically recompiled for Windows, with AI participation recorded in twenty-one commit trailers and the build steps kept as batch scripts rather than prebuilt binaries.
+- [Peggle Enhanced](https://github.com/aidrum/peggle-enhanced) ![stars](https://img.shields.io/github/stars/aidrum/peggle-enhanced?style=flat-square&label=%E2%98%85) - Native port: the Peggle iOS build decompiled and ported to MonoGame, with a FAQ that scopes the AI use precisely - code only, while graphics edits, icons and music were done by hand.
+- [Predator: Concrete Jungle PC](https://github.com/Adolini1715/Concrete-Jungle-PC) ![stars](https://img.shields.io/github/stars/Adolini1715/Concrete-Jungle-PC?style=flat-square&label=%E2%98%85) - Native port: the 2005 Xbox game rebuilt for PC, with AI participation recorded in two commit trailers and an installer and soak-test script kept in the tree instead of binaries.
 
 ### Tooling & MCP
 
