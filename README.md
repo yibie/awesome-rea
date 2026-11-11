@@ -61,9 +61,9 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Game Decompilation](#game-decompilation) | 14 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 19 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
-| [Console & Firmware](#console--firmware) | 2 |
+| [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **57** |
+| **Total** | **58** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -71,7 +71,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Game Decompilation](#game-decompilation) — 14 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 19 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
-- [Console & Firmware](#console--firmware) — 2 entries
+- [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
 ## Full list
@@ -138,6 +138,7 @@ Use this category for AI-assisted reverse engineering that is not a game: consol
 
 - [xbox-boot-re](https://github.com/bennyborn/xbox-boot-re) ![stars](https://img.shields.io/github/stars/bennyborn/xbox-boot-re?style=flat-square&label=%E2%98%85) - Firmware: reconstructs the original Xbox boot animation from a single 1 MB retail BIOS image, verified by matching the animation and its state bit for bit against recorded runs in the xemu emulator, down to the sound sequencer's DSP program; its README states that Claude Opus 5.5 produced most of the work under human direction.
 - [Champagne](https://github.com/unixzii/Champagne) ![stars](https://img.shields.io/github/stars/unixzii/Champagne?style=flat-square&label=%E2%98%85) - Platform layer: runs Snow Leopard applications on macOS and Windows without a virtual machine, Wine-style, verified by a "what works" list rather than a promise - TextEdit is fully usable and Calculator, Stickies, Font Book, Dictionary and the Finder open - and all 28 of its commits carry a `Co-Authored-By: Claude Opus 5.5` trailer.
+- [DESIGN:OS Studio](https://github.com/jangtrinh/design-os-studio) ![stars](https://img.shields.io/github/stars/jangtrinh/design-os-studio?style=flat-square&label=%E2%98%85) - Desktop reimplementation: REA (morluto/rea 6.7.0) analysed Figma Desktop JavaScript and the .fig v106 kiwi schema (public method notes and checked-in rea CLI evidence; wasm lanes were unavailable so a local schema reader was used), accepted by the repository's cargo test suite including designos-fig .fig round-trip tests on macOS CI, with known issue #834 still open for numbered-list formatting and inherited paints on save.
 
 ### Related Practices & Discussions
 
