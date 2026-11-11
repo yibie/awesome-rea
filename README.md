@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 14 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 19 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 20 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **58** |
+| **Total** | **59** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 14 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 19 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 20 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -120,6 +120,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Colin McRae Rally 2005 native port](https://github.com/projectedan/McRae05-XBE-Recomp) ![stars](https://img.shields.io/github/stars/projectedan/McRae05-XBE-Recomp?style=flat-square&label=%E2%98%85) - Native port: the Xbox build statically recompiled for Windows, with AI participation recorded in twenty-one commit trailers and the build steps kept as batch scripts rather than prebuilt binaries.
 - [Peggle Enhanced](https://github.com/aidrum/peggle-enhanced) ![stars](https://img.shields.io/github/stars/aidrum/peggle-enhanced?style=flat-square&label=%E2%98%85) - Native port: the Peggle iOS build decompiled and ported to MonoGame, with a FAQ that scopes the AI use precisely - code only, while graphics edits, icons and music were done by hand.
 - [Predator: Concrete Jungle PC](https://github.com/Adolini1715/Concrete-Jungle-PC) ![stars](https://img.shields.io/github/stars/Adolini1715/Concrete-Jungle-PC?style=flat-square&label=%E2%98%85) - Native port: the 2005 Xbox game rebuilt for PC, with AI participation recorded in two commit trailers and an installer and soak-test script kept in the tree instead of binaries.
+- [Mario Kart 64 on PS3](https://github.com/stingziz0u/mk64-ps3) ![stars](https://img.shields.io/github/stars/stingziz0u/mk64-ps3?style=flat-square&label=%E2%98%85) - Native port: the Mario Kart 64 decompilation running on PS3 homebrew through PSL1GHT, shipping no game assets and loading them at runtime from the user's own ROM, with an AI disclosure section stating the code was written collaboratively with Claude.
 
 ### Tooling & MCP
 
