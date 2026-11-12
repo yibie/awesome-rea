@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 14 |
+| [Game Decompilation](#game-decompilation) | 17 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 20 |
 | [Tooling & MCP](#tooling--mcp) | 5 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **59** |
+| **Total** | **62** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 14 entries
+- [Game Decompilation](#game-decompilation) — 17 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 20 entries
 - [Tooling & MCP](#tooling--mcp) — 5 entries
 - [Console & Firmware](#console--firmware) — 3 entries
@@ -95,6 +95,9 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Tony Hawk's Pro Skater 64](https://github.com/andrewnakas/thps64) ![stars](https://img.shields.io/github/stars/andrewnakas/thps64?style=flat-square&label=%E2%98%85) - Decompilation: the N64 game fully decompiled, with AI participation stated in the README and carried in six of its commit trailers.
 - [Crackdown 2 decompilation](https://github.com/matty45/Crackdown2-Decomp) ![stars](https://img.shields.io/github/stars/matty45/Crackdown2-Decomp?style=flat-square&label=%E2%98%85) - Decompilation: a byte-matching reconstruction of Crackdown 2, with AI participation recorded in the README and in two commit trailers.
 - [Redivivus](https://github.com/jaenster/redivivus) ![stars](https://img.shields.io/github/stars/jaenster/redivivus?style=flat-square&label=%E2%98%85) - Decompilation: agents propose names and types into the Diablo II 1.14d Ghidra databases over a read-only MCP server, and a generator emits the C++ tree; accepted by recompiling with the original Visual C++ 2005 SP1 and byte-comparing each function against retail Game.exe, 5,689 of 14,812 matched (38.4%).
+- [Lemmings for Windows 95](https://github.com/NitrosGits/Lemmings-For-Windows-95) ![stars](https://img.shields.io/github/stars/NitrosGits/Lemmings-For-Windows-95?style=flat-square&label=%E2%98%85) - Matching decompilation: rebuilt from the Windows 95 release, with a methodology section that names the AI part outright - assistance under human architecture direction and verification, alongside the reverse-engineering tooling.
+- [Tony Hawk's Underground](https://github.com/andrewnakas/thug-decomp) ![stars](https://img.shields.io/github/stars/andrewnakas/thug-decomp?style=flat-square&label=%E2%98%85) - Matching decompilation: opens its contributor guide to human and AI agents alike and states where the line is - no AI is involved in merging, and a steward checks out main and copies in only what each pull request touches.
+- [Empire Earth](https://github.com/Protryon/empire_earth) ![stars](https://img.shields.io/github/stars/Protryon/empire_earth?style=flat-square&label=%E2%98%85) - Matching decompilation: the rebuilt engine plays multiplayer against the original, hosts and clients mixing across both, with AI participation carried in twenty commit trailers rather than anywhere in the README.
 
 ### Static Recompilation & Native Ports
 
