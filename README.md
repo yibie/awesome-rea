@@ -59,18 +59,18 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 17 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 20 |
-| [Tooling & MCP](#tooling--mcp) | 5 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 23 |
+| [Tooling & MCP](#tooling--mcp) | 6 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **62** |
+| **Total** | **66** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 17 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 20 entries
-- [Tooling & MCP](#tooling--mcp) — 5 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 23 entries
+- [Tooling & MCP](#tooling--mcp) — 6 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
 
@@ -124,6 +124,9 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Peggle Enhanced](https://github.com/aidrum/peggle-enhanced) ![stars](https://img.shields.io/github/stars/aidrum/peggle-enhanced?style=flat-square&label=%E2%98%85) - Native port: the Peggle iOS build decompiled and ported to MonoGame, with a FAQ that scopes the AI use precisely - code only, while graphics edits, icons and music were done by hand.
 - [Predator: Concrete Jungle PC](https://github.com/Adolini1715/Concrete-Jungle-PC) ![stars](https://img.shields.io/github/stars/Adolini1715/Concrete-Jungle-PC?style=flat-square&label=%E2%98%85) - Native port: the 2005 Xbox game rebuilt for PC, with AI participation recorded in two commit trailers and an installer and soak-test script kept in the tree instead of binaries.
 - [Mario Kart 64 on PS3](https://github.com/stingziz0u/mk64-ps3) ![stars](https://img.shields.io/github/stars/stingziz0u/mk64-ps3?style=flat-square&label=%E2%98%85) - Native port: the Mario Kart 64 decompilation running on PS3 homebrew through PSL1GHT, shipping no game assets and loading them at runtime from the user's own ROM, with an AI disclosure section stating the code was written collaboratively with Claude.
+- [TotK Recomp](https://github.com/valentderah/totk-pc-recomp) ![stars](https://img.shields.io/github/stars/valentderah/totk-pc-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: Tears of the Kingdom translated to C and compiled into a native Windows and Linux program built from the user's own dumped copy, playable at 60 fps by default with 144 as an experimental option, and labelled early development while it is.
+- [Ocarina Recomp](https://github.com/sostenesfreitas/ocarina-recomp) ![stars](https://img.shields.io/github/stars/sostenesfreitas/ocarina-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the game's code turned into C and compiled as a Windows program, whose README recommends a different project, Hookshot, for playing today after comparing both on the same machine with the same saves.
+- [GTA: Vice City Stories](https://github.com/gothamor/gta-vcs-recomp) ![stars](https://img.shields.io/github/stars/gothamor/gta-vcs-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the PS2 build recompiled into C++ for Windows and Linux, one API on the first and Vulkan on the second, with the executable read from the user's own disc and the rest of the data loaded from it at runtime.
 
 ### Tooling & MCP
 
@@ -135,6 +138,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [decomp-compat-kit](https://github.com/LinuxJessi/decomp-compat-kit) ![stars](https://img.shields.io/github/stars/LinuxJessi/decomp-compat-kit?style=flat-square&label=%E2%98%85) - Verification tooling: independent byte verification for matching decompilations, so the check runs outside the build the agents just produced.
 - [REA (Reverse Engineer Anything)](https://github.com/ReverseEngineer-Anything/REA-Github) ![stars](https://img.shields.io/github/stars/ReverseEngineer-Anything/REA-Github?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
 - [Game Decompilation Skill for Claude](https://github.com/lemiur/Game-Decompilation-Skill-For-Claude) ![stars](https://img.shields.io/github/stars/lemiur/Game-Decompilation-Skill-For-Claude?style=flat-square&label=%E2%98%85) - Method as a skill: a set of Claude Code skills describing how to reconstruct, diagnose, permute, review and merge a byte-matching decompilation, kept project-independent by letting each game repository supply its own commands and conventions through an `AGENTS.md` file.
+- [RecompLauncher](https://github.com/elripalda/RecompLauncher) ![stars](https://img.shields.io/github/stars/elripalda/RecompLauncher?style=flat-square&label=%E2%98%85) - Ecosystem tooling: a Rust launcher that finds, installs, updates and plays PC recompilations, with the user supplying their own copy of each game and the launcher doing the setup.
 
 ### Console & Firmware
 
