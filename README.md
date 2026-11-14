@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 17 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 23 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 26 |
 | [Tooling & MCP](#tooling--mcp) | 6 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **66** |
+| **Total** | **69** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 17 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 23 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 26 entries
 - [Tooling & MCP](#tooling--mcp) — 6 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 17 entries
@@ -127,6 +127,9 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [TotK Recomp](https://github.com/valentderah/totk-pc-recomp) ![stars](https://img.shields.io/github/stars/valentderah/totk-pc-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: Tears of the Kingdom translated to C and compiled into a native Windows and Linux program built from the user's own dumped copy, playable at 60 fps by default with 144 as an experimental option, and labelled early development while it is.
 - [Ocarina Recomp](https://github.com/sostenesfreitas/ocarina-recomp) ![stars](https://img.shields.io/github/stars/sostenesfreitas/ocarina-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the game's code turned into C and compiled as a Windows program, whose README recommends a different project, Hookshot, for playing today after comparing both on the same machine with the same saves.
 - [GTA: Vice City Stories](https://github.com/gothamor/gta-vcs-recomp) ![stars](https://img.shields.io/github/stars/gothamor/gta-vcs-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the PS2 build recompiled into C++ for Windows and Linux, one API on the first and Vulkan on the second, with the executable read from the user's own disc and the rest of the data loaded from it at runtime.
+- [Recompia](https://github.com/Dittobyte/Recompia) ![stars](https://img.shields.io/github/stars/Dittobyte/Recompia?style=flat-square&label=%E2%98%85) - Static recompilation: a Switch 2 Pokemon title rebuilt to run natively, with the disclosure in the first line - built with AI, supervised by humans - and one file in the tree that an installer could use, a batch script.
+- [Donkey Kong Bananza PC](https://github.com/Lucas-blip-png/dkb-pc-recomp) ![stars](https://img.shields.io/github/stars/Lucas-blip-png/dkb-pc-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: a Switch 2 title rebuilt for PC, with an FAQ that answers how AI was used - most of the code and documentation written by coding agents, then checked by running the game and the differential tests.
+- [Mario Kart World](https://github.com/adriadam10/mkw-recomp) ![stars](https://img.shields.io/github/stars/adriadam10/mkw-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the game's AArch64 code translated to C ahead of time, with no CPU interpreter and no JIT, and a README that names Claude as having done most of the port.
 
 ### Tooling & MCP
 
