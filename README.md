@@ -59,20 +59,20 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 17 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 26 |
-| [Tooling & MCP](#tooling--mcp) | 6 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 27 |
+| [Tooling & MCP](#tooling--mcp) | 8 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 17 |
-| **Total** | **69** |
+| [Related Practices & Discussions](#related-practices--discussions) | 18 |
+| **Total** | **73** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 17 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 26 entries
-- [Tooling & MCP](#tooling--mcp) — 6 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 27 entries
+- [Tooling & MCP](#tooling--mcp) — 8 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 17 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 18 entries
 
 ## Full list
 
@@ -130,6 +130,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Recompia](https://github.com/Dittobyte/Recompia) ![stars](https://img.shields.io/github/stars/Dittobyte/Recompia?style=flat-square&label=%E2%98%85) - Static recompilation: a Switch 2 Pokemon title rebuilt to run natively, with the disclosure in the first line - built with AI, supervised by humans - and one file in the tree that an installer could use, a batch script.
 - [Donkey Kong Bananza PC](https://github.com/Lucas-blip-png/dkb-pc-recomp) ![stars](https://img.shields.io/github/stars/Lucas-blip-png/dkb-pc-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: a Switch 2 title rebuilt for PC, with an FAQ that answers how AI was used - most of the code and documentation written by coding agents, then checked by running the game and the differential tests.
 - [Mario Kart World](https://github.com/adriadam10/mkw-recomp) ![stars](https://img.shields.io/github/stars/adriadam10/mkw-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the game's AArch64 code translated to C ahead of time, with no CPU interpreter and no JIT, and a README that names Claude as having done most of the port.
+- [TA Reborn](https://github.com/Jared-woodruff/TA-Reborn) ![stars](https://img.shields.io/github/stars/Jared-woodruff/TA-Reborn?style=flat-square&label=%E2%98%85) - New engine: Total Annihilation rewritten in Rust from scratch and pointed at the copy you own, with twenty thousand units in a single battle and credits that name Claude Opus for development alongside twelve commit trailers.
 
 ### Tooling & MCP
 
@@ -142,6 +143,8 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [REA (Reverse Engineer Anything)](https://github.com/ReverseEngineer-Anything/REA-Github) ![stars](https://img.shields.io/github/stars/ReverseEngineer-Anything/REA-Github?style=flat-square&label=%E2%98%85) - MCP agent: version 6.3.0 ships as a local zip with Hopper, Ghidra and IDA hooks, so an agent drives a disassembler on your own machine rather than in someone's cloud - and it is the tool behind the half-hour Steam-game-to-Unity test already recorded in the discussions.
 - [Game Decompilation Skill for Claude](https://github.com/lemiur/Game-Decompilation-Skill-For-Claude) ![stars](https://img.shields.io/github/stars/lemiur/Game-Decompilation-Skill-For-Claude?style=flat-square&label=%E2%98%85) - Method as a skill: a set of Claude Code skills describing how to reconstruct, diagnose, permute, review and merge a byte-matching decompilation, kept project-independent by letting each game repository supply its own commands and conventions through an `AGENTS.md` file.
 - [RecompLauncher](https://github.com/elripalda/RecompLauncher) ![stars](https://img.shields.io/github/stars/elripalda/RecompLauncher?style=flat-square&label=%E2%98%85) - Ecosystem tooling: a Rust launcher that finds, installs, updates and plays PC recompilations, with the user supplying their own copy of each game and the launcher doing the setup.
+- [The Console skill](https://github.com/Jakeschincariol/console-skill) ![stars](https://img.shields.io/github/stars/Jakeschincariol/console-skill?style=flat-square&label=%E2%98%85) - Skills: eleven Claude skills that port PlayStation 2 games you own to PC, plain Python with nothing to install, doing the heavy lifting through ran-j's static recompiler and crediting the method to hkmodd's earlier skill.
+- [PocketPort Anything](https://github.com/Alexispher/pocketport-anything) ![stars](https://img.shields.io/github/stars/Alexispher/pocketport-anything?style=flat-square&label=%E2%98%85) - Porting framework: an AI-assisted research and engineering pipeline for adapting games to the Nintendo 3DS, with a README caveat that "anything" describes the scope of investigation rather than a promise of compatibility.
 
 ### Console & Firmware
 
@@ -174,4 +177,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Finding Jingle Town: Debugging an N64 Game without Symbols](https://blog.chrislewis.au/finding-jingle-town-debugging-an-n64-game-without-symbols/) - Debugging write-up: using a debugger alongside the matched source to explain runtime behaviour once the original symbols are gone, which is the part of a decompilation that byte-matching does not cover.
 - [decomp.wtf](https://github.com/i12bp8/decomp.wtf) ![stars](https://img.shields.io/github/stars/i12bp8/decomp.wtf?style=flat-square&label=%E2%98%85) - Withdrawal: a 422-star tool that had an AI agent decompile games you own into compiling C, archived after pushback from the decompilation community, with the code left up under MIT and a request to use it only on games you own and not to share the code it produces - the strongest evidence yet that this community polices the line.
 - [Awesome Decomp Games](https://github.com/SubmitGame/awesome-decomp-games) ![stars](https://img.shields.io/github/stars/SubmitGame/awesome-decomp-games?style=flat-square&label=%E2%98%85) - Resource: a rated, auto-refreshed list of decompiled and recompiled games, generated from a data directory rather than hand-edited, which is the same acceptance-visible rule applied to a catalogue.
+- [Reverse Engineering Atlas](https://github.com/jammyfu/reverse-engineering-atlas) ![stars](https://img.shields.io/github/stars/jammyfu/reverse-engineering-atlas?style=flat-square&label=%E2%98%85) - Map: 413 entries and 407 repositories catalogued so you find existing work before starting your own, across five README languages, and independent of any upstream project.
 
