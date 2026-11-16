@@ -58,21 +58,21 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 17 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 27 |
+| [Game Decompilation](#game-decompilation) | 18 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 29 |
 | [Tooling & MCP](#tooling--mcp) | 8 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 18 |
-| **Total** | **73** |
+| [Related Practices & Discussions](#related-practices--discussions) | 19 |
+| **Total** | **77** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 17 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 27 entries
+- [Game Decompilation](#game-decompilation) — 18 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 29 entries
 - [Tooling & MCP](#tooling--mcp) — 8 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 18 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 19 entries
 
 ## Full list
 
@@ -98,6 +98,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Lemmings for Windows 95](https://github.com/NitrosGits/Lemmings-For-Windows-95) ![stars](https://img.shields.io/github/stars/NitrosGits/Lemmings-For-Windows-95?style=flat-square&label=%E2%98%85) - Matching decompilation: rebuilt from the Windows 95 release, with a methodology section that names the AI part outright - assistance under human architecture direction and verification, alongside the reverse-engineering tooling.
 - [Tony Hawk's Underground](https://github.com/andrewnakas/thug-decomp) ![stars](https://img.shields.io/github/stars/andrewnakas/thug-decomp?style=flat-square&label=%E2%98%85) - Matching decompilation: opens its contributor guide to human and AI agents alike and states where the line is - no AI is involved in merging, and a steward checks out main and copies in only what each pull request touches.
 - [Empire Earth](https://github.com/Protryon/empire_earth) ![stars](https://img.shields.io/github/stars/Protryon/empire_earth?style=flat-square&label=%E2%98%85) - Matching decompilation: the rebuilt engine plays multiplayer against the original, hosts and clients mixing across both, with AI participation carried in twenty commit trailers rather than anywhere in the README.
+- [Halo](https://github.com/punpckhdq/halo) ![stars](https://img.shields.io/github/stars/punpckhdq/halo?style=flat-square&label=%E2%98%85) - Decompilation: the original Halo rebuilt against the retail binary, with AI involvement visible in seventeen of the last twenty commits and in no section of the README.
 
 ### Static Recompilation & Native Ports
 
@@ -131,6 +132,8 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Donkey Kong Bananza PC](https://github.com/Lucas-blip-png/dkb-pc-recomp) ![stars](https://img.shields.io/github/stars/Lucas-blip-png/dkb-pc-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: a Switch 2 title rebuilt for PC, with an FAQ that answers how AI was used - most of the code and documentation written by coding agents, then checked by running the game and the differential tests.
 - [Mario Kart World](https://github.com/adriadam10/mkw-recomp) ![stars](https://img.shields.io/github/stars/adriadam10/mkw-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: the game's AArch64 code translated to C ahead of time, with no CPU interpreter and no JIT, and a README that names Claude as having done most of the port.
 - [TA Reborn](https://github.com/Jared-woodruff/TA-Reborn) ![stars](https://img.shields.io/github/stars/Jared-woodruff/TA-Reborn?style=flat-square&label=%E2%98%85) - New engine: Total Annihilation rewritten in Rust from scratch and pointed at the copy you own, with twenty thousand units in a single battle and credits that name Claude Opus for development alongside twelve commit trailers.
+- [G-Diffuser](https://github.com/Zorkats/G-Diffuser) ![stars](https://img.shields.io/github/stars/Zorkats/G-Diffuser?style=flat-square&label=%E2%98%85) - PC port: F-Zero X rebuilt on top of the fzerox decompilation, with a candid note that the author was scared at first to say LLM models had been used to understand the game's quirks.
+- [Demon's Souls native port](https://github.com/timboat/demons-souls-recomp) ![stars](https://img.shields.io/github/stars/timboat/demons-souls-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: PS3 PPU and SPU code translated to C and C++ through ps3recomp and run on a runtime with a Direct3D 12 renderer, shipping tools and patches only and building the game from the user's own disc image.
 
 ### Tooling & MCP
 
@@ -178,4 +181,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [decomp.wtf](https://github.com/i12bp8/decomp.wtf) ![stars](https://img.shields.io/github/stars/i12bp8/decomp.wtf?style=flat-square&label=%E2%98%85) - Withdrawal: a 422-star tool that had an AI agent decompile games you own into compiling C, archived after pushback from the decompilation community, with the code left up under MIT and a request to use it only on games you own and not to share the code it produces - the strongest evidence yet that this community polices the line.
 - [Awesome Decomp Games](https://github.com/SubmitGame/awesome-decomp-games) ![stars](https://img.shields.io/github/stars/SubmitGame/awesome-decomp-games?style=flat-square&label=%E2%98%85) - Resource: a rated, auto-refreshed list of decompiled and recompiled games, generated from a data directory rather than hand-edited, which is the same acceptance-visible rule applied to a catalogue.
 - [Reverse Engineering Atlas](https://github.com/jammyfu/reverse-engineering-atlas) ![stars](https://img.shields.io/github/stars/jammyfu/reverse-engineering-atlas?style=flat-square&label=%E2%98%85) - Map: 413 entries and 407 repositories catalogued so you find existing work before starting your own, across five README languages, and independent of any upstream project.
+- [Awesome REA](https://github.com/reacher-z/Awesome-REA) ![stars](https://img.shields.io/github/stars/reacher-z/Awesome-REA?style=flat-square&label=%E2%98%85) - Hub: tools, case studies and papers for reversing websites, games, apps, binaries, firmware and protocols, with a website, a written review method and featured benchmarks rather than an unfiltered link list.
 
