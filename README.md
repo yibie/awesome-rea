@@ -60,19 +60,19 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 18 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 29 |
-| [Tooling & MCP](#tooling--mcp) | 8 |
+| [Tooling & MCP](#tooling--mcp) | 9 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 19 |
-| **Total** | **77** |
+| [Related Practices & Discussions](#related-practices--discussions) | 20 |
+| **Total** | **79** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 18 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 29 entries
-- [Tooling & MCP](#tooling--mcp) — 8 entries
+- [Tooling & MCP](#tooling--mcp) — 9 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 19 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 20 entries
 
 ## Full list
 
@@ -148,6 +148,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [RecompLauncher](https://github.com/elripalda/RecompLauncher) ![stars](https://img.shields.io/github/stars/elripalda/RecompLauncher?style=flat-square&label=%E2%98%85) - Ecosystem tooling: a Rust launcher that finds, installs, updates and plays PC recompilations, with the user supplying their own copy of each game and the launcher doing the setup.
 - [The Console skill](https://github.com/Jakeschincariol/console-skill) ![stars](https://img.shields.io/github/stars/Jakeschincariol/console-skill?style=flat-square&label=%E2%98%85) - Skills: eleven Claude skills that port PlayStation 2 games you own to PC, plain Python with nothing to install, doing the heavy lifting through ran-j's static recompiler and crediting the method to hkmodd's earlier skill.
 - [PocketPort Anything](https://github.com/Alexispher/pocketport-anything) ![stars](https://img.shields.io/github/stars/Alexispher/pocketport-anything?style=flat-square&label=%E2%98%85) - Porting framework: an AI-assisted research and engineering pipeline for adapting games to the Nintendo 3DS, with a README caveat that "anything" describes the scope of investigation rather than a promise of compatibility.
+- [Kuna](https://github.com/Noelo-Lab/kuna) ![stars](https://img.shields.io/github/stars/Noelo-Lab/kuna?style=flat-square&label=%E2%98%85) - Decompiler: written in Rust and originally ported from Ghidra, built to be refined by other agents rather than by hand, an experiment in how far autonomous refinement of a decompiler can go - and it holds the top position on DecBench against most modern decompilers.
 
 ### Console & Firmware
 
@@ -182,4 +183,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Awesome Decomp Games](https://github.com/SubmitGame/awesome-decomp-games) ![stars](https://img.shields.io/github/stars/SubmitGame/awesome-decomp-games?style=flat-square&label=%E2%98%85) - Resource: a rated, auto-refreshed list of decompiled and recompiled games, generated from a data directory rather than hand-edited, which is the same acceptance-visible rule applied to a catalogue.
 - [Reverse Engineering Atlas](https://github.com/jammyfu/reverse-engineering-atlas) ![stars](https://img.shields.io/github/stars/jammyfu/reverse-engineering-atlas?style=flat-square&label=%E2%98%85) - Map: 413 entries and 407 repositories catalogued so you find existing work before starting your own, across five README languages, and independent of any upstream project.
 - [Awesome REA](https://github.com/reacher-z/Awesome-REA) ![stars](https://img.shields.io/github/stars/reacher-z/Awesome-REA?style=flat-square&label=%E2%98%85) - Hub: tools, case studies and papers for reversing websites, games, apps, binaries, firmware and protocols, with a website, a written review method and featured benchmarks rather than an unfiltered link list.
+- [Reversed with AI](https://reversedwithai.com) - Directory: a growing directory of reverse engineering projects done with AI models, plus setup guides, a news feed and a list of AI-decompiled games you can play. Anyone can submit a project and authors can edit their own entries. Each entry links to its primary source and records the model, the outcome, the time and cost the author reported, and four checks (source available, reproduces, ran on real hardware, verified by someone else).
 
