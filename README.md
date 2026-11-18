@@ -59,20 +59,20 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 18 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 29 |
-| [Tooling & MCP](#tooling--mcp) | 9 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 31 |
+| [Tooling & MCP](#tooling--mcp) | 10 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 20 |
-| **Total** | **79** |
+| [Related Practices & Discussions](#related-practices--discussions) | 21 |
+| **Total** | **83** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 18 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 29 entries
-- [Tooling & MCP](#tooling--mcp) — 9 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 31 entries
+- [Tooling & MCP](#tooling--mcp) — 10 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 20 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 21 entries
 
 ## Full list
 
@@ -134,6 +134,8 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [TA Reborn](https://github.com/Jared-woodruff/TA-Reborn) ![stars](https://img.shields.io/github/stars/Jared-woodruff/TA-Reborn?style=flat-square&label=%E2%98%85) - New engine: Total Annihilation rewritten in Rust from scratch and pointed at the copy you own, with twenty thousand units in a single battle and credits that name Claude Opus for development alongside twelve commit trailers.
 - [G-Diffuser](https://github.com/Zorkats/G-Diffuser) ![stars](https://img.shields.io/github/stars/Zorkats/G-Diffuser?style=flat-square&label=%E2%98%85) - PC port: F-Zero X rebuilt on top of the fzerox decompilation, with a candid note that the author was scared at first to say LLM models had been used to understand the game's quirks.
 - [Demon's Souls native port](https://github.com/timboat/demons-souls-recomp) ![stars](https://img.shields.io/github/stars/timboat/demons-souls-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: PS3 PPU and SPU code translated to C and C++ through ps3recomp and run on a runtime with a Direct3D 12 renderer, shipping tools and patches only and building the game from the user's own disc image.
+- [Zelda: Wind Waker HD](https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp) ![stars](https://img.shields.io/github/stars/ZeldaWWHDRecomp/ZeldaWWHDRecomp?style=flat-square&label=%E2%98%85) - Recompilation: the Wii U release rebuilt for PC, with AI participation visible in twenty-one of the last thirty commits and in no section of a 3,162-file README.
+- [Paleblood](https://github.com/Yharnam-Hunters/Paleblood) ![stars](https://img.shields.io/github/stars/Yharnam-Hunters/Paleblood?style=flat-square&label=%E2%98%85) - Rebuild: Bloodborne reconstructed as readable code that runs natively on a PC, with AI participation carried by commit trailers rather than by anything in the README.
 
 ### Tooling & MCP
 
@@ -149,6 +151,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [The Console skill](https://github.com/Jakeschincariol/console-skill) ![stars](https://img.shields.io/github/stars/Jakeschincariol/console-skill?style=flat-square&label=%E2%98%85) - Skills: eleven Claude skills that port PlayStation 2 games you own to PC, plain Python with nothing to install, doing the heavy lifting through ran-j's static recompiler and crediting the method to hkmodd's earlier skill.
 - [PocketPort Anything](https://github.com/Alexispher/pocketport-anything) ![stars](https://img.shields.io/github/stars/Alexispher/pocketport-anything?style=flat-square&label=%E2%98%85) - Porting framework: an AI-assisted research and engineering pipeline for adapting games to the Nintendo 3DS, with a README caveat that "anything" describes the scope of investigation rather than a promise of compatibility.
 - [Kuna](https://github.com/Noelo-Lab/kuna) ![stars](https://img.shields.io/github/stars/Noelo-Lab/kuna?style=flat-square&label=%E2%98%85) - Decompiler: written in Rust and originally ported from Ghidra, built to be refined by other agents rather than by hand, an experiment in how far autonomous refinement of a decompiler can go - and it holds the top position on DecBench against most modern decompilers.
+- [reccmp](https://github.com/isledecomp/reccmp) ![stars](https://img.shields.io/github/stars/isledecomp/reccmp?style=flat-square&label=%E2%98%85) - Toolchain: compares a rebuilt binary against the original function by function, so a decompilation's accuracy is a number rather than an impression.
 
 ### Console & Firmware
 
@@ -184,4 +187,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Reverse Engineering Atlas](https://github.com/jammyfu/reverse-engineering-atlas) ![stars](https://img.shields.io/github/stars/jammyfu/reverse-engineering-atlas?style=flat-square&label=%E2%98%85) - Map: 413 entries and 407 repositories catalogued so you find existing work before starting your own, across five README languages, and independent of any upstream project.
 - [Awesome REA](https://github.com/reacher-z/Awesome-REA) ![stars](https://img.shields.io/github/stars/reacher-z/Awesome-REA?style=flat-square&label=%E2%98%85) - Hub: tools, case studies and papers for reversing websites, games, apps, binaries, firmware and protocols, with a website, a written review method and featured benchmarks rather than an unfiltered link list.
 - [Reversed with AI](https://reversedwithai.com) - Directory: a growing directory of reverse engineering projects done with AI models, plus setup guides, a news feed and a list of AI-decompiled games you can play. Anyone can submit a project and authors can edit their own entries. Each entry links to its primary source and records the model, the outcome, the time and cost the author reported, and four checks (source available, reproduces, ran on real hardware, verified by someone else).
+- [awesome-reverse-engineered](https://github.com/alexgaoth/awesome-reverse-engineered) ![stars](https://img.shields.io/github/stars/alexgaoth/awesome-reverse-engineered?style=flat-square&label=%E2%98%85) - Index: 17,676 open-source projects that exist because someone reversed a closed app, device, protocol or format, searchable as a site and installable as an agent skill.
 
