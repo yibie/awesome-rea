@@ -58,19 +58,19 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 18 |
+| [Game Decompilation](#game-decompilation) | 20 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 31 |
-| [Tooling & MCP](#tooling--mcp) | 10 |
+| [Tooling & MCP](#tooling--mcp) | 11 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 21 |
-| **Total** | **83** |
+| **Total** | **86** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 18 entries
+- [Game Decompilation](#game-decompilation) — 20 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 31 entries
-- [Tooling & MCP](#tooling--mcp) — 10 entries
+- [Tooling & MCP](#tooling--mcp) — 11 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 21 entries
 
@@ -99,6 +99,8 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Tony Hawk's Underground](https://github.com/andrewnakas/thug-decomp) ![stars](https://img.shields.io/github/stars/andrewnakas/thug-decomp?style=flat-square&label=%E2%98%85) - Matching decompilation: opens its contributor guide to human and AI agents alike and states where the line is - no AI is involved in merging, and a steward checks out main and copies in only what each pull request touches.
 - [Empire Earth](https://github.com/Protryon/empire_earth) ![stars](https://img.shields.io/github/stars/Protryon/empire_earth?style=flat-square&label=%E2%98%85) - Matching decompilation: the rebuilt engine plays multiplayer against the original, hosts and clients mixing across both, with AI participation carried in twenty commit trailers rather than anywhere in the README.
 - [Halo](https://github.com/punpckhdq/halo) ![stars](https://img.shields.io/github/stars/punpckhdq/halo?style=flat-square&label=%E2%98%85) - Decompilation: the original Halo rebuilt against the retail binary, with AI involvement visible in seventeen of the last twenty commits and in no section of the README.
+- [LEGO Island](https://github.com/isledecomp/isle) ![stars](https://img.shields.io/github/stars/isledecomp/isle?style=flat-square&label=%E2%98%85) - Decompilation: LEGO Island rebuilt to C, with AI participation carried by commit trailers rather than by anything in the README.
+- [Mario Kart 64 decompilation](https://github.com/n64decomp/mk64) ![stars](https://img.shields.io/github/stars/n64decomp/mk64?style=flat-square&label=%E2%98%85) - Decompilation: the matching project for Mario Kart 64, with AI participation in a minority of recent commits and no mention of it in the README.
 
 ### Static Recompilation & Native Ports
 
@@ -152,6 +154,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [PocketPort Anything](https://github.com/Alexispher/pocketport-anything) ![stars](https://img.shields.io/github/stars/Alexispher/pocketport-anything?style=flat-square&label=%E2%98%85) - Porting framework: an AI-assisted research and engineering pipeline for adapting games to the Nintendo 3DS, with a README caveat that "anything" describes the scope of investigation rather than a promise of compatibility.
 - [Kuna](https://github.com/Noelo-Lab/kuna) ![stars](https://img.shields.io/github/stars/Noelo-Lab/kuna?style=flat-square&label=%E2%98%85) - Decompiler: written in Rust and originally ported from Ghidra, built to be refined by other agents rather than by hand, an experiment in how far autonomous refinement of a decompiler can go - and it holds the top position on DecBench against most modern decompilers.
 - [reccmp](https://github.com/isledecomp/reccmp) ![stars](https://img.shields.io/github/stars/isledecomp/reccmp?style=flat-square&label=%E2%98%85) - Toolchain: compares a rebuilt binary against the original function by function, so a decompilation's accuracy is a number rather than an impression.
+- [DecBench](https://github.com/Noelo-Lab/decbench) ![stars](https://img.shields.io/github/stars/Noelo-Lab/decbench?style=flat-square&label=%E2%98%85) - Benchmark: compares decompilers and modern LLMs at recovering exact source, with new metrics and datasets for the different directions exactness can take.
 
 ### Console & Firmware
 
