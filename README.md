@@ -58,18 +58,18 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 20 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 31 |
+| [Game Decompilation](#game-decompilation) | 21 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 32 |
 | [Tooling & MCP](#tooling--mcp) | 11 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 21 |
-| **Total** | **86** |
+| **Total** | **88** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 20 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 31 entries
+- [Game Decompilation](#game-decompilation) — 21 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 32 entries
 - [Tooling & MCP](#tooling--mcp) — 11 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 21 entries
@@ -101,6 +101,7 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [Halo](https://github.com/punpckhdq/halo) ![stars](https://img.shields.io/github/stars/punpckhdq/halo?style=flat-square&label=%E2%98%85) - Decompilation: the original Halo rebuilt against the retail binary, with AI involvement visible in seventeen of the last twenty commits and in no section of the README.
 - [LEGO Island](https://github.com/isledecomp/isle) ![stars](https://img.shields.io/github/stars/isledecomp/isle?style=flat-square&label=%E2%98%85) - Decompilation: LEGO Island rebuilt to C, with AI participation carried by commit trailers rather than by anything in the README.
 - [Mario Kart 64 decompilation](https://github.com/n64decomp/mk64) ![stars](https://img.shields.io/github/stars/n64decomp/mk64?style=flat-square&label=%E2%98%85) - Decompilation: the matching project for Mario Kart 64, with AI participation in a minority of recent commits and no mention of it in the README.
+- [LEGO Racers](https://github.com/isledecomp/racers) ![stars](https://img.shields.io/github/stars/isledecomp/racers?style=flat-square&label=%E2%98%85) - Decompilation: the 1999 LEGO Racers rebuilt to matching C, with 188 commit trailers across the last thirty commits - the densest AI participation recorded here, in a repository whose README says nothing about it.
 
 ### Static Recompilation & Native Ports
 
@@ -138,6 +139,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Demon's Souls native port](https://github.com/timboat/demons-souls-recomp) ![stars](https://img.shields.io/github/stars/timboat/demons-souls-recomp?style=flat-square&label=%E2%98%85) - Static recompilation: PS3 PPU and SPU code translated to C and C++ through ps3recomp and run on a runtime with a Direct3D 12 renderer, shipping tools and patches only and building the game from the user's own disc image.
 - [Zelda: Wind Waker HD](https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp) ![stars](https://img.shields.io/github/stars/ZeldaWWHDRecomp/ZeldaWWHDRecomp?style=flat-square&label=%E2%98%85) - Recompilation: the Wii U release rebuilt for PC, with AI participation visible in twenty-one of the last thirty commits and in no section of a 3,162-file README.
 - [Paleblood](https://github.com/Yharnam-Hunters/Paleblood) ![stars](https://img.shields.io/github/stars/Yharnam-Hunters/Paleblood?style=flat-square&label=%E2%98%85) - Rebuild: Bloodborne reconstructed as readable code that runs natively on a PC, with AI participation carried by commit trailers rather than by anything in the README.
+- [CPS-2 Recomp](https://github.com/tmcleroy/cps2recomp) ![stars](https://img.shields.io/github/stars/tmcleroy/cps2recomp?style=flat-square&label=%E2%98%85) - Static recompilation: Capcom's CPS-2 arcade games translated to C++ and run on a machine written for this project rather than an emulator, across macOS, Linux, Windows and Android, with one launcher and training mode plus rollback netplay in the fighting games.
 
 ### Tooling & MCP
 
