@@ -25,3 +25,5 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [LEGO Island](https://github.com/isledecomp/isle) - Decompilation: LEGO Island rebuilt to C, with AI participation carried by commit trailers rather than by anything in the README.
 - [Mario Kart 64 decompilation](https://github.com/n64decomp/mk64) - Decompilation: the matching project for Mario Kart 64, with AI participation in a minority of recent commits and no mention of it in the README.
 - [LEGO Racers](https://github.com/isledecomp/racers) - Decompilation: the 1999 LEGO Racers rebuilt to matching C, with 188 commit trailers across the last thirty commits - the densest AI participation recorded here, in a repository whose README says nothing about it.
+- [Ocarina of Time](https://github.com/zeldaret/oot) - Decompilation: the matching project for OoT, with AI participation carried in the commit trailers rather than in the README.
+- [Super Smash Bros. Melee](https://github.com/doldecomp/melee) - Decompilation: Melee rebuilt to matching C, with thirty-four commit trailers across the last thirty commits and no AI mention in the README.

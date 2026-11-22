@@ -58,19 +58,19 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 21 |
+| [Game Decompilation](#game-decompilation) | 23 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 33 |
-| [Tooling & MCP](#tooling--mcp) | 11 |
+| [Tooling & MCP](#tooling--mcp) | 12 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 21 |
-| **Total** | **89** |
+| **Total** | **92** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 21 entries
+- [Game Decompilation](#game-decompilation) — 23 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 33 entries
-- [Tooling & MCP](#tooling--mcp) — 11 entries
+- [Tooling & MCP](#tooling--mcp) — 12 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 21 entries
 
@@ -102,6 +102,8 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [LEGO Island](https://github.com/isledecomp/isle) ![stars](https://img.shields.io/github/stars/isledecomp/isle?style=flat-square&label=%E2%98%85) - Decompilation: LEGO Island rebuilt to C, with AI participation carried by commit trailers rather than by anything in the README.
 - [Mario Kart 64 decompilation](https://github.com/n64decomp/mk64) ![stars](https://img.shields.io/github/stars/n64decomp/mk64?style=flat-square&label=%E2%98%85) - Decompilation: the matching project for Mario Kart 64, with AI participation in a minority of recent commits and no mention of it in the README.
 - [LEGO Racers](https://github.com/isledecomp/racers) ![stars](https://img.shields.io/github/stars/isledecomp/racers?style=flat-square&label=%E2%98%85) - Decompilation: the 1999 LEGO Racers rebuilt to matching C, with 188 commit trailers across the last thirty commits - the densest AI participation recorded here, in a repository whose README says nothing about it.
+- [Ocarina of Time](https://github.com/zeldaret/oot) ![stars](https://img.shields.io/github/stars/zeldaret/oot?style=flat-square&label=%E2%98%85) - Decompilation: the matching project for OoT, with AI participation carried in the commit trailers rather than in the README.
+- [Super Smash Bros. Melee](https://github.com/doldecomp/melee) ![stars](https://img.shields.io/github/stars/doldecomp/melee?style=flat-square&label=%E2%98%85) - Decompilation: Melee rebuilt to matching C, with thirty-four commit trailers across the last thirty commits and no AI mention in the README.
 
 ### Static Recompilation & Native Ports
 
@@ -158,6 +160,7 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [Kuna](https://github.com/Noelo-Lab/kuna) ![stars](https://img.shields.io/github/stars/Noelo-Lab/kuna?style=flat-square&label=%E2%98%85) - Decompiler: written in Rust and originally ported from Ghidra, built to be refined by other agents rather than by hand, an experiment in how far autonomous refinement of a decompiler can go - and it holds the top position on DecBench against most modern decompilers.
 - [reccmp](https://github.com/isledecomp/reccmp) ![stars](https://img.shields.io/github/stars/isledecomp/reccmp?style=flat-square&label=%E2%98%85) - Toolchain: compares a rebuilt binary against the original function by function, so a decompilation's accuracy is a number rather than an impression.
 - [DecBench](https://github.com/Noelo-Lab/decbench) ![stars](https://img.shields.io/github/stars/Noelo-Lab/decbench?style=flat-square&label=%E2%98%85) - Benchmark: compares decompilers and modern LLMs at recovering exact source, with new metrics and datasets for the different directions exactness can take.
+- [ReAgent](https://github.com/Dryxio/reagent) ![stars](https://img.shields.io/github/stars/Dryxio/reagent?style=flat-square&label=%E2%98%85) - Reverse-engineering agent: uses Ghidra with Claude, Codex or OpenAI-compatible models to reconstruct and validate C and C++ functions, running independent reverser and checker models plus build and test gates before anything is called recovered.
 
 ### Console & Firmware
 
