@@ -62,8 +62,8 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 33 |
 | [Tooling & MCP](#tooling--mcp) | 15 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 22 |
-| **Total** | **96** |
+| [Related Practices & Discussions](#related-practices--discussions) | 23 |
+| **Total** | **97** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
@@ -72,7 +72,7 @@ Each entry lives in exactly one category, chosen by what the project is. The REA
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 33 entries
 - [Tooling & MCP](#tooling--mcp) — 15 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 22 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 23 entries
 
 ## Full list
 
@@ -201,4 +201,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Reversed with AI](https://reversedwithai.com) - Directory: a growing directory of reverse engineering projects done with AI models, plus setup guides, a news feed and a list of AI-decompiled games you can play. Anyone can submit a project and authors can edit their own entries. Each entry links to its primary source and records the model, the outcome, the time and cost the author reported, and four checks (source available, reproduces, ran on real hardware, verified by someone else).
 - [awesome-reverse-engineered](https://github.com/alexgaoth/awesome-reverse-engineered) ![stars](https://img.shields.io/github/stars/alexgaoth/awesome-reverse-engineered?style=flat-square&label=%E2%98%85) - Index: 17,676 open-source projects that exist because someone reversed a closed app, device, protocol or format, searchable as a site and installable as an agent skill.
 - [DeGPT](https://github.com/PeiweiHu/DeGPT) ![stars](https://img.shields.io/github/stars/PeiweiHu/DeGPT?style=flat-square&label=%E2%98%85) - Paper and code (NDSS 2024): rewrites decompiler output with a model instead of accepting what the decompiler emitted, which is a different bet from every agent-driven entry here.
+- [Awesome REA (AIshihzong)](https://github.com/AIshihzong/awesome-reverse-engineer-anything) ![stars](https://img.shields.io/github/stars/AIshihzong/awesome-reverse-engineer-anything?style=flat-square&label=%E2%98%85) - Index: bilingual (EN/中文) list of AI reverse-engineering and rebuild cases; each case is checked against its sources for whether it really used REA, with an index by the app a project replaces.
 
