@@ -60,19 +60,19 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 23 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 33 |
-| [Tooling & MCP](#tooling--mcp) | 12 |
+| [Tooling & MCP](#tooling--mcp) | 15 |
 | [Console & Firmware](#console--firmware) | 3 |
-| [Related Practices & Discussions](#related-practices--discussions) | 21 |
-| **Total** | **92** |
+| [Related Practices & Discussions](#related-practices--discussions) | 22 |
+| **Total** | **96** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 23 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 33 entries
-- [Tooling & MCP](#tooling--mcp) — 12 entries
+- [Tooling & MCP](#tooling--mcp) — 15 entries
 - [Console & Firmware](#console--firmware) — 3 entries
-- [Related Practices & Discussions](#related-practices--discussions) — 21 entries
+- [Related Practices & Discussions](#related-practices--discussions) — 22 entries
 
 ## Full list
 
@@ -161,6 +161,9 @@ What does not belong here: the decompilation or port projects themselves (see th
 - [reccmp](https://github.com/isledecomp/reccmp) ![stars](https://img.shields.io/github/stars/isledecomp/reccmp?style=flat-square&label=%E2%98%85) - Toolchain: compares a rebuilt binary against the original function by function, so a decompilation's accuracy is a number rather than an impression.
 - [DecBench](https://github.com/Noelo-Lab/decbench) ![stars](https://img.shields.io/github/stars/Noelo-Lab/decbench?style=flat-square&label=%E2%98%85) - Benchmark: compares decompilers and modern LLMs at recovering exact source, with new metrics and datasets for the different directions exactness can take.
 - [ReAgent](https://github.com/Dryxio/reagent) ![stars](https://img.shields.io/github/stars/Dryxio/reagent?style=flat-square&label=%E2%98%85) - Reverse-engineering agent: uses Ghidra with Claude, Codex or OpenAI-compatible models to reconstruct and validate C and C++ functions, running independent reverser and checker models plus build and test gates before anything is called recovered.
+- [Seep Reverse Lab](https://github.com/angusdevgo/Seep-Reverse-Lab) ![stars](https://img.shields.io/github/stars/angusdevgo/Seep-Reverse-Lab?style=flat-square&label=%E2%98%85) - Workbench: agent-native reverse engineering across platforms, with an authorisation-audit angle that checks for CWE-602 style trust boundaries rather than only reconstructing code.
+- [jshook](https://github.com/vmoranv/jshookmcp) ![stars](https://img.shields.io/github/stars/vmoranv/jshookmcp?style=flat-square&label=%E2%98%85) - JS and WASM workbench: for agents rather than people, hooking a page, capturing traffic, deobfuscating a bundle and disassembling WASM in one search-first workspace.
+- [OGhidra](https://github.com/llnl/OGhidra) ![stars](https://img.shields.io/github/stars/llnl/OGhidra?style=flat-square&label=%E2%98%85) - Ghidra bridge: connects language models to Ghidra's analysis so binaries are examined through the same database the analyst uses, from a national laboratory rather than a hobby repo.
 
 ### Console & Firmware
 
@@ -197,4 +200,5 @@ What does not belong here: projects that belong in a project category, vendor an
 - [Awesome REA](https://github.com/reacher-z/Awesome-REA) ![stars](https://img.shields.io/github/stars/reacher-z/Awesome-REA?style=flat-square&label=%E2%98%85) - Hub: tools, case studies and papers for reversing websites, games, apps, binaries, firmware and protocols, with a website, a written review method and featured benchmarks rather than an unfiltered link list.
 - [Reversed with AI](https://reversedwithai.com) - Directory: a growing directory of reverse engineering projects done with AI models, plus setup guides, a news feed and a list of AI-decompiled games you can play. Anyone can submit a project and authors can edit their own entries. Each entry links to its primary source and records the model, the outcome, the time and cost the author reported, and four checks (source available, reproduces, ran on real hardware, verified by someone else).
 - [awesome-reverse-engineered](https://github.com/alexgaoth/awesome-reverse-engineered) ![stars](https://img.shields.io/github/stars/alexgaoth/awesome-reverse-engineered?style=flat-square&label=%E2%98%85) - Index: 17,676 open-source projects that exist because someone reversed a closed app, device, protocol or format, searchable as a site and installable as an agent skill.
+- [DeGPT](https://github.com/PeiweiHu/DeGPT) ![stars](https://img.shields.io/github/stars/PeiweiHu/DeGPT?style=flat-square&label=%E2%98%85) - Paper and code (NDSS 2024): rewrites decompiler output with a model instead of accepting what the decompiler emitted, which is a different bet from every agent-driven entry here.
 
