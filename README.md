@@ -58,17 +58,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 
 | Category | Entries |
 | --- | ---: |
-| [Game Decompilation](#game-decompilation) | 23 |
+| [Game Decompilation](#game-decompilation) | 25 |
 | [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 33 |
 | [Tooling & MCP](#tooling--mcp) | 15 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 22 |
-| **Total** | **96** |
+| **Total** | **98** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
-- [Game Decompilation](#game-decompilation) — 23 entries
+- [Game Decompilation](#game-decompilation) — 25 entries
 - [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 33 entries
 - [Tooling & MCP](#tooling--mcp) — 15 entries
 - [Console & Firmware](#console--firmware) — 3 entries
@@ -104,6 +104,8 @@ What does not belong here: ports that do not claim byte-matching (see Static Rec
 - [LEGO Racers](https://github.com/isledecomp/racers) ![stars](https://img.shields.io/github/stars/isledecomp/racers?style=flat-square&label=%E2%98%85) - Decompilation: the 1999 LEGO Racers rebuilt to matching C, with 188 commit trailers across the last thirty commits - the densest AI participation recorded here, in a repository whose README says nothing about it.
 - [Ocarina of Time](https://github.com/zeldaret/oot) ![stars](https://img.shields.io/github/stars/zeldaret/oot?style=flat-square&label=%E2%98%85) - Decompilation: the matching project for OoT, with AI participation carried in the commit trailers rather than in the README.
 - [Super Smash Bros. Melee](https://github.com/doldecomp/melee) ![stars](https://img.shields.io/github/stars/doldecomp/melee?style=flat-square&label=%E2%98%85) - Decompilation: Melee rebuilt to matching C, with thirty-four commit trailers across the last thirty commits and no AI mention in the README.
+- [Wii Sports](https://github.com/doldecomp/ogws) ![stars](https://img.shields.io/github/stars/doldecomp/ogws?style=flat-square&label=%E2%98%85) - Matching decompilation: Wii Sports at 35.03 percent of code matched, 5,968 of 14,122 functions and 37.6 percent of data on its decomp.dev page, with twelve commit trailers across the last thirty commits.
+- [OpenRAC](https://github.com/OpenRAC/OpenRAC) ![stars](https://img.shields.io/github/stars/OpenRAC/OpenRAC?style=flat-square&label=%E2%98%85) - Decompilation and port: the Ratchet & Clank series rebuilt to matching C++ with a PC port alongside it, 4,030 files at CC0-style openness and six commit trailers in the last thirty.
 
 ### Static Recompilation & Native Ports
 
