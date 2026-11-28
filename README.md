@@ -59,17 +59,17 @@ This corner of AI-assisted work sits closer to licence law than most, so read th
 | Category | Entries |
 | --- | ---: |
 | [Game Decompilation](#game-decompilation) | 26 |
-| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 37 |
+| [Static Recompilation & Native Ports](#static-recompilation--native-ports) | 38 |
 | [Tooling & MCP](#tooling--mcp) | 15 |
 | [Console & Firmware](#console--firmware) | 3 |
 | [Related Practices & Discussions](#related-practices--discussions) | 23 |
-| **Total** | **104** |
+| **Total** | **105** |
 
 Each entry lives in exactly one category, chosen by what the project is. The README is generated from the category files, so this page is always the current state of the list.
 
 ## Browse by category
 - [Game Decompilation](#game-decompilation) — 26 entries
-- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 37 entries
+- [Static Recompilation & Native Ports](#static-recompilation--native-ports) — 38 entries
 - [Tooling & MCP](#tooling--mcp) — 15 entries
 - [Console & Firmware](#console--firmware) — 3 entries
 - [Related Practices & Discussions](#related-practices--discussions) — 23 entries
@@ -150,6 +150,7 @@ What does not belong here: projects whose counter is byte-exact function matchin
 - [Savage Wind](https://github.com/Revivedx/SavageWindRecomp) ![stars](https://img.shields.io/github/stars/Revivedx/SavageWindRecomp?style=flat-square&label=%E2%98%85) - Static recompilation: a work-in-progress port of Breath of the Wild, at fifty commit trailers across the last thirty commits - the densest signal on this list after LEGO Racers.
 - [Link's Awakening](https://github.com/peiikai/LASRecomp) ![stars](https://img.shields.io/github/stars/peiikai/LASRecomp?style=flat-square&label=%E2%98%85) - Static recompilation: the Switch remake turned into native builds for macOS, Windows and Linux, with seventeen commit trailers in the last thirty.
 - [DRIG](https://github.com/PipeKnight/drig-race-driver) ![stars](https://img.shields.io/github/stars/PipeKnight/drig-race-driver?style=flat-square&label=%E2%98%85) - Native reimplementation: AI agents help translate Race Driver: GRID (2008) behaviour into Rust and Bevy, with recorded driving, AI and audio traces from the original and bit-exact comparisons of individual routines used to verify the result.
+- [Sonic the Hedgehog 2006](https://github.com/sonicnext-dev/MarathonRecomp) ![stars](https://img.shields.io/github/stars/sonicnext-dev/MarathonRecomp?style=flat-square&label=%E2%98%85) - Recompilation: the Xbox 360 version running on PC with no assets in the repository and the game read from the user's own disc, at seventeen commit trailers across the last thirty commits and no AI mention in the README.
 
 ### Tooling & MCP
 
